@@ -1,0 +1,69 @@
+! @(#)$Mu: mgv/ad/printDialog.ad 1.2 1998/11/17 05:23:24 $
+!#
+!# Print dialog.
+!#
+MGv*printDialog_popup.title:     MGv:  Print
+MGv*printDialog.fractionBase:    10
+MGv*printDialog.autoUnmanage:    False
+MGv*printDialog.wlInitialFocus:  *cmdText
+MGv*printDialog.wlDefaultButton: *apply
+MGv*printDialog.wlCancelButton:  *dismiss
+MGv*printDialog.wlAutoDismiss:   True
+MGv*printDialog.helpChapter:     __URL_Printing__
+
+MGv*printDialog.cmdForm.topAttachment:            attach_form
+MGv*printDialog.cmdForm.rightAttachment:          attach_form
+MGv*printDialog.cmdForm.leftAttachment:           attach_form
+MGv*printDialog.cmdForm.cmd.labelString:          Printer Command:
+MGv*printDialog.cmdForm.cmd.topAttachment:        attach_form
+MGv*printDialog.cmdForm.cmd.leftAttachment:       attach_form
+MGv*printDialog.cmdForm.cmd.bottomAttachment:     attach_form
+MGv*printDialog.cmdForm.cmdText.topAttachment:    attach_form
+MGv*printDialog.cmdForm.cmdText.rightAttachment:  attach_form
+MGv*printDialog.cmdForm.cmdText.bottomAttachment: attach_form
+MGv*printDialog.cmdForm.cmdText.leftAttachment:   attach_widget
+MGv*printDialog.cmdForm.cmdText.leftWidget:       cmd
+
+MGv*printDialog.markedOnly.labelString:     Print Marked Pages Only
+MGv*printDialog.markedOnly.alignment:       alignment_beginning
+MGv*printDialog.markedOnly.topAttachment:   attach_widget
+MGv*printDialog.markedOnly.topWidget:       cmdForm
+MGv*printDialog.markedOnly.leftAttachment:  attach_form
+MGv*printDialog.markedOnly.rightAttachment: attach_form
+
+MGv*printDialog.unmark.labelString:     Unmark Pages After Printing
+MGv*printDialog.unmark.alignment:       alignment_beginning
+MGv*printDialog.unmark.topAttachment:   attach_widget
+MGv*printDialog.unmark.topWidget:       markedOnly
+MGv*printDialog.unmark.leftAttachment:  attach_form
+MGv*printDialog.unmark.rightAttachment: attach_form
+
+MGv*printDialog.apply.labelString:      Print
+MGv*printDialog.apply.leftAttachment:   attach_position
+MGv*printDialog.apply.leftPosition:     1
+MGv*printDialog.apply.rightAttachment:  attach_position
+MGv*printDialog.apply.rightPosition:    3
+MGv*printDialog.apply.bottomAttachment: attach_form
+
+MGv*printDialog.dismiss.labelString:      Dismiss
+MGv*printDialog.dismiss.leftAttachment:   attach_position
+MGv*printDialog.dismiss.leftPosition:     4
+MGv*printDialog.dismiss.rightAttachment:  attach_position
+MGv*printDialog.dismiss.rightPosition:    6
+MGv*printDialog.dismiss.bottomAttachment: attach_form
+
+MGv*printDialog.help.labelString:      Help
+MGv*printDialog.help.leftAttachment:   attach_position
+MGv*printDialog.help.leftPosition:     7
+MGv*printDialog.help.rightAttachment:  attach_position
+MGv*printDialog.help.rightPosition:    9
+MGv*printDialog.help.bottomAttachment: attach_form
+
+MGv*printDialog.sep.topAttachment:    attach_widget
+MGv*printDialog.sep.topWidget:        unmark
+MGv*printDialog.sep.bottomAttachment: attach_widget
+MGv*printDialog.sep.bottomWidget:     apply
+MGv*printDialog.sep.rightAttachment:  attach_form
+MGv*printDialog.sep.rightOffset:      0
+MGv*printDialog.sep.leftAttachment:   attach_form
+MGv*printDialog.sep.leftOffset:       0

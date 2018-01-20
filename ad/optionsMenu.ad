@@ -1,0 +1,41 @@
+! @(#)$Mu: mgv/ad/optionsMenu.ad 1.2 1998/11/17 05:15:25 $
+!#
+!# Options menu
+!#
+MGv*menuBar*options_pd*antiAlias.labelString:     Enable Anti-aliasing
+MGv*menuBar*options_pd*antiAlias.mnemonic:        A
+MGv*menuBar*options_pd*antiAlias.accelerator:     Ctrl<Key>A
+MGv*menuBar*options_pd*antiAlias.acceleratorText: Ctrl+A
+MGv*options_pd*antiAlias.helpSection:             options-antialias
+MGv*options_pd*antiAlias.helpChapter:             __URL_The_Options_Menu__
+MGv*options_pd*antiAlias.wlStatusMessage:         Enable or disable anti-aliasing
+
+MGv*menuBar*options_pd*magicScroll.labelString:     Enable Magic Scrolling
+MGv*menuBar*options_pd*magicScroll.mnemonic:        M
+MGv*menuBar*options_pd*magicScroll.accelerator:     Alt<Key>G
+MGv*menuBar*options_pd*magicScroll.acceleratorText: Alt+G
+MGv*options_pd*magicScroll.helpSection:             options-magicscrolling
+MGv*options_pd*magicScroll.helpChapter:             __URL_The_Options_Menu__
+MGv*options_pd*magicScroll.wlStatusMessage:         Enable or disable magic scrolling
+
+MGv*menuBar*options_pd*smoothScroll.labelString:     Enable Smooth Scrolling
+MGv*menuBar*options_pd*smoothScroll.mnemonic:        S
+MGv*menuBar*options_pd*smoothScroll.accelerator:     Alt<Key>L
+MGv*menuBar*options_pd*smoothScroll.acceleratorText: Alt+L
+MGv*options_pd*smoothScroll.helpSection:             options-smoothscrolling
+MGv*options_pd*smoothScroll.helpChapter:             __URL_The_Options_Menu__
+MGv*options_pd*smoothScroll.wlStatusMessage:         Enable or disable smooth scrolling
+
+MGv*menuBar*options_pd*smartSizing.labelString:     Enable Smart Sizing
+MGv*menuBar*options_pd*smartSizing.mnemonic:        z
+MGv*menuBar*options_pd*smartSizing.accelerator:     Alt<Key>Z
+MGv*menuBar*options_pd*smartSizing.acceleratorText: Alt+Z
+MGv*options_pd*smartSizing.helpSection:             options-smartsizing
+MGv*options_pd*smartSizing.helpChapter:             __URL_The_Options_Menu__
+MGv*options_pd*smartSizing.wlStatusMessage:         Enable or disable smart window sizing
+
+MGv*menuBar*options_pd*warnings.labelString: Suppress Warnings
+MGv*menuBar*options_pd*smartSizing.mnemonic: W
+MGv*options_pd*warnings.helpSection:         options-warnings
+MGv*options_pd*warnings.helpChapter:         __URL_The_Options_Menu__
+MGv*options_pd*warnings.wlStatusMessage:     Log or don't log X warnings

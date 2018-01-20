@@ -1,0 +1,13 @@
+If you have installed a previous release of mgv, you should remove the
+old library files (these are probably in /usr/local/lib/mgv* for 1.x and
+2.x or /usr/local/share/mgv/3.* for 3.x) after installing this release.
+If you don't know where the previous mgv was installed, then run:
+
+	mgv --version
+
+*before* saying "make install" to get a list of paths.
+
+If you installed a 1.x version of mgv, you should remove the application
+defaults from /usr/X11/lib/X11/app-defaults (or where ever they are
+on your system) or the mgv user interface will complain and be very
+confused.

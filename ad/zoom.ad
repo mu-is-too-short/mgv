@@ -1,0 +1,25 @@
+! @(#)$Mu: mgv/ad/zoom.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# Zoom window.
+!#
+MGv*zoomer_popup.title:       MGv:  Zoom Window
+MGv*zoomer.wlDefaultButton:   *dismiss
+MGv*zoomer.wlCancelButton:    *dismiss
+MGv*zoomer.mappedWhenManaged: False
+MGv*zoomer.helpChapter:       __URL_Zooming__
+
+MGv*zoomer*dismiss.labelString:      Dismiss
+MGv*zoomer*dismiss.bottomAttachment: attach_form
+MGv*zoomer*dismiss.rightAttachment:  attach_form
+MGv*zoomer*dismiss.leftAttachment:   attach_form
+MGv*zoomer*sep.leftAttachment:       attach_form
+MGv*zoomer*sep.leftOffset:           0
+MGv*zoomer*sep.rightAttachment:      attach_form
+MGv*zoomer*sep.rightOffset:          0
+MGv*zoomer*sep.bottomAttachment:     attach_widget
+MGv*zoomer*sep.bottomWidget:         dismiss
+MGv*zoomer*view.topAttachment:       attach_form
+MGv*zoomer*view.bottomAttachment:    attach_widget
+MGv*zoomer*view.bottomWidget:        sep
+MGv*zoomer*view.rightAttachment:     attach_form
+MGv*zoomer*view.leftAttachment:      attach_form

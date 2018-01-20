@@ -1,0 +1,37 @@
+! @(#)$Mu: mgv/wlib/wlib/spacing.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# spacing.ad - resource settings for nicer widget spacing. Sorry but the Motif
+!#              defaults suck undead guinea pigs through a fire hose.
+!#
+
+!#
+!# Dialog space sanity.
+!#
+__CLS__*XmDialogShell.XmForm.horizontalSpacing: 10
+__CLS__*XmDialogShell.XmForm.verticalSpacing:   10
+
+!#
+!# Button margins.
+!#
+__CLS__*XmPushButton.marginHeight:       4
+__CLS__*XmPushButton.marginWidth:        4
+__CLS__*XmPushButtonGadget.marginHeight: 4
+__CLS__*XmPushButtonGadget.marginWidth:  4
+
+!#
+!# Margins for the menus.
+!#
+__CLS__*XmRowColumn*XmCascadeButton*XmToggleButton.marginWidth:             8
+__CLS__*XmRowColumn*XmCascadeButton*XmToggleButtonGadget.marginWidth:       8
+__CLS__*XmRowColumn*XmCascadeButtonGadget*XmToggleButton.marginWidth:       8
+__CLS__*XmRowColumn*XmCascadeButtonGadget*XmToggleButtonGadget.marginWidth: 8
+
+__CLS__*XmRowColumn*XmCascadeButton*XmPushButton.marginWidth:             8
+__CLS__*XmRowColumn*XmCascadeButton*XmPushButtonGadget.marginWidth:       8
+__CLS__*XmRowColumn*XmCascadeButtonGadget*XmPushButton.marginWidth:       8
+__CLS__*XmRowColumn*XmCascadeButtonGadget*XmPushButtonGadget.marginWidth: 8
+
+__CLS__*XmRowColumn*XmCascadeButton*XmCascadeButton.marginWidth:             8
+__CLS__*XmRowColumn*XmCascadeButton*XmCascadeButtonGadget.marginWidth:       8
+__CLS__*XmRowColumn*XmCascadeButtonGadget*XmCascadeButton.marginWidth:       8
+__CLS__*XmRowColumn*XmCascadeButtonGadget*XmCascadeButtonGadget.marginWidth: 8

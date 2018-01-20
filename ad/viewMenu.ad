@@ -1,0 +1,51 @@
+! @(#)$Mu: mgv/ad/viewMenu.ad 1.2 1998/11/17 07:24:08 $
+!#
+!# View menu (almost same as the popup menu except for the accelerators).
+!#
+MGv*menuBar*view_pd*hideLog.labelString:     Hide Log
+MGv*menuBar*view_pd*hideLog.mnemonic:        L
+MGv*menuBar*view_pd*hideLog.accelerator:     Ctrl<Key>L
+MGv*menuBar*view_pd*hideLog.acceleratorText: Ctrl+L
+MGv*view_pd*hideLog.helpSection:             view-hidelog
+MGv*view_pd*hideLog.helpChapter:             __URL_The_View_Menu__
+MGv*view_pd*hideLog.wlStatusMessage:         Hide or show the program log
+
+MGv*menuBar*view_pd*hideList.labelString:     Hide Page List
+MGv*menuBar*view_pd*hideList.mnemonic:        P
+MGv*menuBar*view_pd*hideList.accelerator:     Ctrl<Key>G
+MGv*menuBar*view_pd*hideList.acceleratorText: Ctrl+G
+MGv*view_pd*hideList.helpSection:             view-hidelist
+MGv*view_pd*hideList.helpChapter:             __URL_The_View_Menu__
+MGv*view_pd*hideList.wlStatusMessage:         Hide or show the page list
+
+MGv*menuBar*view_pd*hideStatus.labelString:     Hide Status Line
+MGv*menuBar*view_pd*hideStatus.mnemonic:        S
+MGv*menuBar*view_pd*hideStatus.accelerator:     Ctrl<Key>T
+MGv*menuBar*view_pd*hideStatus.acceleratorText: Ctrl+T
+MGv*view_pd*hideStatus.helpSection:             view-hidestatus
+MGv*view_pd*hideStatus.helpChapter:             __URL_The_View_Menu__
+MGv*view_pd*hideStatus.wlStatusMessage:         Hide or show the status line
+
+MGv*menuBar*view_pd*hideMenu.labelString:     Hide Menu Bar
+MGv*menuBar*view_pd*hideMenu.mnemonic:        M
+MGv*menuBar*view_pd*hideMenu.accelerator:     Ctrl<Key>B
+MGv*menuBar*view_pd*hideMenu.acceleratorText: Ctrl+B
+MGv*view_pd*hideMenu.helpSection:             view-hidemenu
+MGv*view_pd*hideMenu.helpChapter:             __URL_The_View_Menu__
+MGv*view_pd*hideMenu.wlStatusMessage:         Hide or show the menu bar
+
+MGv*menuBar*view_pd*hideToolBar.labelString:     Hide Tool Bar
+MGv*menuBar*view_pd*hideToolBar.mnemonic:        T
+MGv*menuBar*view_pd*hideToolBar.accelerator:     Alt<Key>T
+MGv*menuBar*view_pd*hideToolBar.acceleratorText: Alt+T
+MGv*view_pd*hideToolBar.helpSection:             view-hidetoolbar
+MGv*view_pd*hideToolBar.helpChapter:             __URL_The_View_Menu__
+MGv*view_pd*hideToolBar.wlStatusMessage:         Hide or show the tool bar
+
+MGv*menuBar*view_pd*closeZoom.labelString:     Close All Zooms
+MGv*menuBar*view_pd*closeZoom.mnemonic:        Z
+MGv*menuBar*view_pd*closeZoom.accelerator:     Ctrl<Key>Z
+MGv*menuBar*view_pd*closeZoom.acceleratorText: Ctrl+Z
+MGv*view_pd*closeZoom.helpSection:             view-closezoom
+MGv*view_pd*closeZoom.helpChapter:             __URL_The_View_Menu__
+MGv*view_pd*closeZoom.wlStatusMessage:         Close all of the zoom windows

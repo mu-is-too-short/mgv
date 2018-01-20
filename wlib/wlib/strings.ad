@@ -1,0 +1,15 @@
+! @(#)$Mu: mgv/wlib/wlib/strings.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# strings.ad - extra string settings for wlib.
+!#
+__CLS__*stringCantBrowse:	Could not launch browser %s:  %s
+__CLS__*stringCantGetFile:	could not get file name from file selector
+__CLS__*stringBadVersion:	Incorrect application defaults version found:\n\
+				found '%s' but wanted '%s'.\n\
+				\n\
+				Check the "applicationVersion" resource\n\
+				documentation in the manual for help.
+__CLS__*stringCantLoadHelp:	Could not load help file:\n\
+				url     = '%s'\n\
+				chapter = '%s'\n\
+				section = '%s'\n

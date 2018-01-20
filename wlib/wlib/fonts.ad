@@ -1,0 +1,32 @@
+! @(#)$Mu: mgv/wlib/wlib/fonts.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# fonts.ad - resource settings for nicer fonts. Sorry but the Motif
+!#            defaults suck undead guinea pigs through a fire hose.
+!#
+
+!#
+!# Fonts that appear on menus.
+!#
+__CLS__*XmCascadeButton.fontList:       -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1
+__CLS__*XmCascadeButtonGadget.fontList: -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1
+__CLS__*XmMenuShell*fontList:           -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1
+
+!#
+!# Fonts that appear in dialogs etc...
+!#
+__CLS__*XmToggleButton.fontList:       -*-helvetica-bold-r-normal--12-*-*-*-*-*-iso8859-1
+__CLS__*XmToggleButtonGadget.fontList: -*-helvetica-bold-r-normal--12-*-*-*-*-*-iso8859-1
+__CLS__*XmLabel.fontList:              -*-helvetica-bold-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmLabelGadget.fontList:        -*-helvetica-bold-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmPushButton.fontList:         -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmPushButtonGadget.fontList:   -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmText.fontList:               -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmTextField.fontList:          -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmList.fontList:               -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmScale.fontList:              -*-helvetica-bold-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmSelectionBox*fontList:                 -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmMessageBox*fontList:                   -*-helvetica-medium-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmMessageBox*Message*fontList:           -*-helvetica-bold-r-normal--14-*-*-*-*-*-iso8859-1
+__CLS__*XmFileSelectionBox*XmList*fontList:      -*-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
+__CLS__*XmFileSelectionBox*XmText*fontList:      -*-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
+__CLS__*XmFileSelectionBox*XmTextField*fontList: -*-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-iso8859-1

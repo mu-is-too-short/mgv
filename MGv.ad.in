@@ -1,0 +1,146 @@
+! @(#)$Mu: mgv/MGv.ad.in 1.111 2001/03/09 16:22:34 $
+!#
+!# MGv.ad - application defaults for mgv
+!#
+
+!##
+!## Application Resources
+!##
+!## You should read the "Application Resources" section of the manual
+!## before fiddling with these resources.
+!##
+!## Check the bottom of this file for translations and font/margin settings.
+!##
+
+MGv*antialiasEPS:       True
+MGv*center:             False
+MGv*confirmExit:        True
+MGv*copyStdin:          True
+MGv*decompress:         gzip --stdout --decompress
+MGv*gunzip:             gzip --stdout --decompress
+MGv*bunzip:             bunzip2
+MGv*compress:           compress
+MGv*gzip:               gzip -9
+MGv*bzip:               bzip2 -9
+MGv*killChildrenAtExit: True
+MGv*reticuleForeground: red
+MGv*reticuleLineWidth:  2
+MGv*suppressWarnings:   False
+
+!#
+!# Various Initial UI Settings
+!#
+MGv*defaultPageMedia: Letter
+MGv*hideLog:          True
+MGv*hideMenuBar:      False
+MGv*hidePageList:     False
+MGv*hideStatusLine:   False
+MGv*hideToolBar:      False
+MGv*magstep:          0
+MGv*showLabels:       False
+MGv*showPageNumbers:  True
+
+!#
+!# Scrolling Resources
+!#
+!# If you like smooth scrolling, set MGv*smoothScrolling to True and
+!# it will be on by default; you might want to fiddle with the
+!# smoothness resource to make smooth scolling less/more smooth.
+!#
+MGv*smoothScrolling:  True
+MGv*smoothness:       25
+MGv*scrollPercentage: 90%
+MGv*magicResistance:  2
+MGv*magicScrolling:   True
+MGv*resetScrollBars:  both
+
+!#
+!# Printing Resources
+!#
+!# You probably won't need to set the printCommand resource unless
+!# you have a strange print spooler.  The default value is determined
+!# at run-time by looking for lp in /usr/bin, /bin, and /usr/local/bin
+!# and then lpr in /usr/bin, /bin, and /usr/local/bin; the first command
+!# found is used as the default.  The printer name is determined at run-time
+!# at run-time by checking the LPDEST and PRINTER environment variables,
+!# if neither is set, then "ps" is used as a default.  See the manual
+!# for more information on what you can put in this resource.
+!#
+!MGv*printCommand: lp -d ps
+
+!#
+!# Smart/Automatic Sizing
+!#
+MGv*autoWidth:   True
+MGv*autoHeight:  False
+MGv*smartSizing: False
+MGv*wmWidth:     14
+MGv*wmHeight:    32
+
+m4_include(`ad/toolBar.ad')
+m4_include(`ad/strings.ad')
+m4_include(`wlib/strings.ad')
+m4_include(`wlib/wlib.ad')
+m4_include(`wlib/WlSplashScreen.ad')
+m4_include(`wlib/WlAppShell.ad')
+
+!##############################################################################
+!# Unless you know what you're doing it would be best if
+!# you left most of the rest of the resources alone.  The "attachment"
+!# resources are the most dangerous; "accelerator", "acceleratorText",
+!# "labelString", and "fontList" resources are pretty safe.
+!##############################################################################
+
+!#
+!# miscellaneous things that you should probably leave alone
+!#
+MGv*Ghostview.antialias:            True
+MGv*Ghostview.postScriptForeground: black
+MGv*Ghostview.postScriptBackground: white
+MGv*zoomMenu*tearOffModel:          tear_off_disabled
+
+!#
+!# Misc dialog titles.
+!#
+MGv*childStdout_popup.title: MGv:  Child Status
+MGv*childStderr_popup.title: MGv:  Child Errors
+
+!##
+!## Menus
+!##
+
+m4_include(`ad/menuBar.ad')
+m4_include(`ad/fileMenu.ad')
+m4_include(`ad/pageMenu.ad')
+m4_include(`ad/markMenu.ad')
+m4_include(`ad/magstepMenu.ad')
+m4_include(`ad/orientationMenu.ad')
+m4_include(`ad/mediaMenu.ad')
+m4_include(`ad/optionsMenu.ad')
+m4_include(`ad/viewMenu.ad')
+m4_include(`ad/popupMenu.ad')
+m4_include(`ad/helpMenu.ad')
+m4_include(`ad/zoomMenu.ad')
+
+!##
+!## Dialogs
+!##
+
+m4_include(`ad/aboutDialog.ad')
+m4_include(`ad/bldoptsDialog.ad')
+m4_include(`ad/closeProblemsDialog.ad')
+m4_include(`ad/fileOpen.ad')
+m4_include(`ad/fileSave.ad')
+m4_include(`ad/infoDialog.ad')
+m4_include(`ad/logDialog.ad')
+m4_include(`ad/magstepDialog.ad')
+m4_include(`ad/markRangeDialog.ad')
+m4_include(`ad/printDialog.ad')
+m4_include(`ad/reallyExitDialog.ad')
+m4_include(`ad/zoom.ad')
+
+m4_include(`ad/mainWindow.ad')
+m4_include(`ad/statusLine.ad')
+m4_include(`ad/actions.ad')
+m4_include(`wlib/spacing.ad')
+m4_include(`wlib/fonts.ad')

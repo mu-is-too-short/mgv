@@ -1,0 +1,73 @@
+#!/bin/bash
+cfgflags="--enable-maintainer --prefix=/u/mu/inst"
+
+##
+## Various flags for my local CVS lesstif.
+##
+lesstif_debug="--disable-optimize --enable-debug"
+lesstif_mincl="--with-motif-includes=/u/mu/src/lesstif/include"
+lesstif_mlib="--with-motif-libraries=/u/mu/src/lesstif/lib/Xm-2.0/.libs"
+
+##
+## Normal debug build flags.
+##
+debug_debug="--disable-optimize --enable-debug"
+debug_mincl=""
+debug_mlib=""
+
+##
+## Normal build flags.
+##
+norm_debug="--enable-optimize --disable-debug"
+norm_mincl=""
+norm_mlib=""
+
+cfgdebug="$norm_debug"
+cfgmincl="$norm_mincl"
+cfgmlib="$norm_mlib"
+nobld="no"
+chflags="--enable-compiledhelp"
+while [ $# -ge 1 ]; do
+	case $1 in
+		--lesstif)
+			cfgdebug="$lesstif_debug"
+			cfgmincl="$lesstif_mincl"
+			cfgmlib="$lesstif_mlib"
+			chflags="--disable-compiledhelp"
+			;;
+		--debug)
+			cfgdebug="$debug_debug"
+			cfgmincl="$debug_mincl"
+			cfgmlib="$debug_mlib"
+			;;
+		--nobld)
+			nobld="yes"
+			;;
+		--noch)
+			chflags=""
+			;;
+	esac
+	shift
+done
+
+make maintainer-clean >/dev/null
+
+tools/mudep
+tools/mudep wlib
+
+automake -i
+aclocal -I config
+autoconf
+
+##
+## Can't put these things into CFLAGS because that will interfere with
+## configure's little tests.
+##
+export X_CFLAGS='-ansi -W -Wall -Werror -Wmissing-prototypes'
+./configure $cfgflags $cfgdebug $cfgmincl $cfgmlib $chflags
+
+if [ $nobld = "yes" ]; then
+	exit
+fi
+
+make

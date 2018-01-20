@@ -1,0 +1,29 @@
+! @(#)$Mu: mgv/ad/orientationMenu.ad 1.2 1998/11/17 05:14:10 $
+!#
+!# Orientation menu.
+!#
+MGv*menuBar*orientation_pd.radioBehavior: True
+
+MGv*menuBar*orientation_pd*portrait.labelString: Portrait
+MGv*menuBar*orientation_pd*portrait.mnemonic:    P
+MGv*orientation_pd*portrait.helpSection:         orient-portrait
+MGv*orientation_pd*portrait.helpChapter:         __URL_The_Orientation_Menu__
+MGv*orientation_pd*portrait.wlStatusMessage:     Use a portrait orientation
+
+MGv*menuBar*orientation_pd*landscape.labelString: Landscape
+MGv*menuBar*orientation_pd*landscape.mnemonic:    L
+MGv*orientation_pd*landscape.helpSection:         orient-langscape
+MGv*orientation_pd*landscape.helpChapter:         __URL_The_Orientation_Menu__
+MGv*orientation_pd*landscape.wlStatusMessage:     Use a landscape orientation
+
+MGv*menuBar*orientation_pd*upsideDown.labelString: Upside-down
+MGv*menuBar*orientation_pd*upsideDown.mnemonic:    U
+MGv*orientation_pd*upsideDown.helpSection:         orient-upsidedown
+MGv*orientation_pd*upsideDown.helpChapter:         __URL_The_Orientation_Menu__
+MGv*orientation_pd*upsideDown.wlStatusMessage:     Use an upside-down orientation
+
+MGv*menuBar*orientation_pd*seascape.labelString: Seascape
+MGv*menuBar*orientation_pd*seascape.mnemonic:    S
+MGv*orientation_pd*seascape.helpSection:         orient-seascape
+MGv*orientation_pd*seascape.helpChapter:         __URL_The_Orientation_Menu__
+MGv*orientation_pd*seascape.wlStatusMessage:     Use a seascape orientation

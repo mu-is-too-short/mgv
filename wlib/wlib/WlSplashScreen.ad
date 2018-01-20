@@ -1,0 +1,16 @@
+! @(#)$Mu: mgv/wlib/wlib/WlSplashScreen.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# WlSplashScreen.ad - resources for splash screen widgets
+!#
+!# We try the pixmap first and then the bitmap.
+!# Feel free to replace the xpm and/or xbm files if you don't like
+!# mine.  We assume that the application will set the pixmap and bitmap
+!# data fields so we don't have to read the splash off disk; however, the
+!# wlSplashPixmap and wlSplashBitmap resources take precedence so you can
+!# build your own splash screen and use it without recompiling; you may
+!# consider this over-configurability but it happened almost by accident.
+!#
+__CLS__*wlShowSplashScreen: True
+__CLS__*wlUseMonoSplash:    False
+!__CLS__*wlSplashPixmap:     __DATADIR__/splash.xpm
+!__CLS__*wlSplashBitmap:     __DATADIR__/splash.xbm

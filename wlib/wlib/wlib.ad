@@ -1,0 +1,78 @@
+! @(#)$Mu: mgv/wlib/wlib/wlib.ad 1.3 2001/04/08 16:57:54 $
+!#
+!# wlib.ad - misc resources for wlib.
+!#
+
+!#
+!# General help settings.
+!# The default helpType is the first available type in:
+!#
+!#	html-remote
+!#	html
+!#
+!# The helpBrowser is only used for html-remote and html help.
+!# The helpPrefix is only used if you have not enabled compiled-in
+!# help.
+!#
+!__CLS__*helpType:
+__CLS__*helpBrowser: netscape
+__CLS__*helpPrefix:  file://__DATADIR__/help/
+
+!#
+!# Set this to true if you want to use the built-in icons and false if you
+!# want to let your window manager use some other icon of your choosing.
+!#
+__CLS__*installIcon: True
+
+!#
+!# Set this to true if you want to use the built-in color icon and false
+!# if you want the monochrome icon.  If you didn't link againts libXpm,
+!# then you'll get the monochrome icon no matter what.
+!#
+__CLS__*useColorIcon: True
+
+!#
+!# Temporary Directory
+!#
+!# The default temporary directory is ~/.mgv/MGv.tmp.<pid>, the directory
+!# is created and removed automatically.  If you need to use a different
+!# directory for temporary files, then set this resource, a directory called
+!# MGv.tmp.<pid> will be created in the specified directory.
+!#
+!__CLS__*tempDir:
+
+!#
+!# This resource was added due to various application defaults version
+!# problems.  You should not touch this value.
+!#
+__CLS__*applicationVersion: __VERSION__
+
+!#
+!# Enable or disable wl_assert() calls.  wl_assert() is used for various
+!# sanity checks within the program but these checks take time so you can
+!# disable them if you want (which is the default anyway).
+!#
+__CLS__*wlEnableAssertions: False
+
+!#
+!# IXI screwed up, they "enhanced" the Form widget, sigh.
+!#
+__CLS__*useIxiAdds: NONE
+
+!#
+!# Force sanity for dialogs.
+!#
+__CLS__*XmDialogShell.deleteResponse: unmap
+
+!#
+!# Message/Error/Warning dialog titles.
+!#
+__CLS__*wlError_popup.title:   __CLS__: Error
+__CLS__*wlWarn_popup.title:    __CLS__: Warning
+__CLS__*wlMessage_popup.title: __CLS__: Message
+
+!#
+!# Standard help action.
+!#
+__CLS__*baseTranslations: #override\n\
+	<Key>osfHelp: wlHelp()

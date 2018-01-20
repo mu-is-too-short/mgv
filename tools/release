@@ -1,0 +1,162 @@
+#!/bin/bash -e
+##
+## release
+##	release generator for mgv.
+##
+## Copyright (C) 1998 Eric A. Howe
+##
+## This program is free software; you can redistribute it and/or modify
+## it under the terms of the GNU General Public License as published by
+## the Free Software Foundation; either version 2 of the License, or
+## (at your option) any later version.
+##
+## This program is distributed in the hope that it will be useful,
+## but WITHOUT ANY WARRANTY; without even the implied warranty of
+## MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+## GNU General Public License for more details.
+##
+## You should have received a copy of the GNU General Public License
+## along with this program; if not, write to the Free Software
+## Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+##
+##   Authors:	Eric A. Howe (mu@trends.net)
+##
+# (#)$Mu: mgv/tools/release 1.5 2001/03/14 15:09:51 $
+#
+
+export CVSROOT=/u/cvs/Master
+
+usage() {
+	cat <<_DONE_DONE_DONE_
+$1 [--help] [--nosgi] [--nops] [--min]
+	Generate an mgv release from cvs.
+
+	--help	This help (really?)
+	--nosgi	Don't bother with the SGI icons
+	--nops	Don't bother with the PostScript manuals.
+	--min	same as "--nosgi --nops", just the .tar.gz file.
+_DONE_DONE_DONE_
+}
+
+dops="yes"
+dosgi="yes"
+while [ $# -ge 1 ]; do
+	case $1 in
+	--nops)
+		dops="no"
+		;;
+	--nosgi)
+		dosgi="no"
+		;;
+	--min)
+		dops="no"
+		dosgi="no"
+		;;
+	--help)
+		usage $(basename $0)
+		exit 0
+		;;
+	*)
+		echo "unknown option: $1" 1>&2
+		exit 1
+		;;
+	esac
+	shift
+done
+
+startdir=$(pwd)
+
+echo "---------------> Extracting version..."
+pkgname=$(basename $(pwd))
+cvsdir=$(egrep AM_INIT_AUTOMAKE configure.in \
+	| sed -e 's/AM_INIT_AUTOMAKE(.*,  *\(.*\))/\1/' -e "s/^/$pkgname-/" \
+)
+cvstag=$(echo $cvsdir | tr '.' '_')
+
+echo "---------------> cvstag =" $cvstag
+echo "---------------> cvsdir =" $cvsdir
+
+echo "---------------> Cleaning up old junk..."
+rm -rf .junk/${cvsdir}
+mkdirhier .junk; cd .junk
+
+echo "---------------> Exporting..."
+cvs -Q export -r "$cvstag" -d "$cvsdir" mgv
+cd $cvsdir
+
+echo "---------------> Killing .nodist..."
+rm -rf .nodist
+
+##
+## Sigh, I don't quite understand why I need to run aclocal twice but I do.
+##
+echo "---------------> go autostuff go!"
+aclocal -I config
+automake -i
+aclocal -I config
+autoconf
+
+echo "---------------> Configuring..."
+./configure --enable-maintainer --quiet
+
+echo "---------------> Generating HTML documentation..."
+make -C doc mgv.html
+if [ $dops = "yes" ]; then
+	echo "---------------> Generating PostScript documentation..."
+	make -C doc mgv.ps mgv-a4.ps
+	echo "---------------> Packing up PostScript files..."
+	mv doc/mgv.ps ${startdir}/${cvsdir}.ps
+	mv doc/mgv-a4.ps ${startdir}/${cvsdir}-a4.ps
+	gzip -9 ${startdir}/${cvsdir}.ps &
+	gzip -9 ${startdir}/${cvsdir}-a4.ps &
+fi
+
+if [ $dosgi = "yes" ]; then
+	echo "---------------> Packing up SGI icons"
+	cd lib
+	tar cvf - mgv.icon* | gzip -9 > ${startdir}/${cvsdir}-sgi-icons.tar.gz
+	rm -f mgv.icon*
+	cd ..
+fi
+
+echo "---------------> Build some things"
+make res.m4 MGv.ad
+make -C lib
+
+echo "---------------> doing distclean..."
+make distclean >/dev/null
+rm -f res.m4
+
+echo "---------------> rebuilding config things..."
+automake -i
+aclocal -I config
+autoconf
+touch $(find . -name Makefile.in -print)
+
+echo "---------------> Packing up the dist..."
+cd ..
+tar cf - ${cvsdir} > ${startdir}/${cvsdir}.tar
+rm -rf ${cvsdir}
+cd $startdir
+gzip -9 ${cvsdir}.tar &
+
+echo "---------------> waiting..."
+wait
+tarsize=$(stat -c -o s ${cvsdir}.tar.gz)
+if [ $dops = "yes" ]; then
+	pssize=$(stat -c -o s ${cvsdir}.ps.gz)
+	psa4size=$(stat -c -o s ${cvsdir}-a4.ps.gz)
+fi
+if [ $dosgi = "yes" ]; then
+	sgisize=$(stat -c -o s ${cvsdir}-sgi-icons.tar.gz)
+fi
+
+echo "---------------> All done"
+echo "---------------> 	${tarsize}	${cvsdir}.tar.gz"
+if [ $dops = "yes" ]; then
+	echo "---------------> 	${pssize}	${cvsdir}.ps.gz"
+	echo "---------------> 	${psa4size}	${cvsdir}-a4.ps.gz"
+fi
+if [ $dosgi = "yes" ]; then
+	echo "---------------> 	${sgisize}	${cvsdir}-sgi-icons.tar.gz"
+fi

@@ -1,0 +1,57 @@
+! @(#)$Mu: mgv/ad/markMenu.ad 1.4 1998/12/16 04:10:31 $
+!#
+!# Mark menu
+!#
+MGv*menuBar*mark_pd*mark.labelString:     Mark/Unmark
+MGv*menuBar*mark_pd*mark.mnemonic:        M
+MGv*menuBar*mark_pd*mark.accelerator:     Ctrl<Key>M
+MGv*menuBar*mark_pd*mark.acceleratorText: Ctrl+M
+MGv*mark_pd*mark.helpSection:             mark-mark
+MGv*mark_pd*mark.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*mark.wlStatusMessage:         Mark or unmark the current page
+
+MGv*menuBar*mark_pd*markAll.labelString:     Mark All
+MGv*menuBar*mark_pd*markAll.mnemonic:        A
+MGv*menuBar*mark_pd*markAll.accelerator:     Alt<Key>M
+MGv*menuBar*mark_pd*markAll.acceleratorText: Alt+M
+MGv*mark_pd*markAll.helpSection:             mark-all
+MGv*mark_pd*markAll.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*markAll.wlStatusMessage:         Mark all of the pages
+
+MGv*menuBar*mark_pd*markNone.labelString:     Unmark All
+MGv*menuBar*mark_pd*markNone.mnemonic:        U
+MGv*menuBar*mark_pd*markNone.accelerator:     Alt<Key>U
+MGv*menuBar*mark_pd*markNone.acceleratorText: Alt+U
+MGv*mark_pd*markNone.helpSection:             mark-all
+MGv*mark_pd*markNone.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*markNone.wlStatusMessage:         Unmark all of the pages
+
+MGv*menuBar*mark_pd*even.labelString:     Mark Even Pages
+MGv*menuBar*mark_pd*even.mnemonic:        E
+MGv*menuBar*mark_pd*even.accelerator:     Alt<Key>E
+MGv*menuBar*mark_pd*even.acceleratorText: Alt+E
+MGv*mark_pd*even.helpSection:             mark-evenodd
+MGv*mark_pd*even.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*even.wlStatusMessage:         Mark all of the even numbered pages
+
+MGv*menuBar*mark_pd*odd.labelString:     Mark Odd Pages
+MGv*menuBar*mark_pd*odd.mnemonic:        O
+MGv*menuBar*mark_pd*odd.accelerator:     Alt<Key>D
+MGv*menuBar*mark_pd*odd.acceleratorText: Alt+D
+MGv*mark_pd*odd.helpSection:             mark-evenodd
+MGv*mark_pd*odd.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*odd.wlStatusMessage:         Mark all of the odd numbered pages
+
+MGv*menuBar*mark_pd*invert.labelString:     Invert Marked Pages
+MGv*menuBar*mark_pd*invert.mnemonic:        I
+MGv*menuBar*mark_pd*invert.accelerator:     Alt<Key>I
+MGv*menuBar*mark_pd*invert.acceleratorText: Alt+I
+MGv*mark_pd*invert.helpSection:             mark-invert
+MGv*mark_pd*invert.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*invert.wlStatusMessage:         Mark the unmarked pages and unmark the marked pages
+
+MGv*menuBar*mark_pd*range.labelString:     Range...
+MGv*menuBar*mark_pd*range.mnemonic:        R
+MGv*mark_pd*range.helpSection:             mark-range
+MGv*mark_pd*range.helpChapter:             __URL_The_Mark_Menu__
+MGv*mark_pd*range.wlStatusMessage:         Mark a range of pages

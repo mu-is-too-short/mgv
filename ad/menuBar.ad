@@ -1,0 +1,31 @@
+! @(#)$Mu: mgv/ad/menuBar.ad 1.2 1998/11/17 05:12:57 $
+!#
+!# Menu bar.
+!#
+MGv*menuBar.file.labelString:        File
+MGv*menuBar.file.mnemonic:           F
+MGv*menuBar.file.helpChapter:        __URL_The_File_Menu__
+MGv*menuBar.page.labelString:        Page
+MGv*menuBar.page.mnemonic:           P
+MGv*menuBar.page.helpChapter:        __URL_The_Page_Menu__
+MGv*menuBar.view.labelString:        View
+MGv*menuBar.view.mnemonic:           V
+MGv*menuBar.view.helpChapter:        __URL_The_View_Menu__
+MGv*menuBar.mark.labelString:        Mark
+MGv*menuBar.mark.mnemonic:           k
+MGv*menuBar.mark.helpChapter:        __URL_The_Mark_Menu__
+MGv*menuBar.magstep.labelString:     Magstep
+MGv*menuBar.magstep.mnemonic:        t
+MGv*menuBar.magstep.helpChapter:     __URL_The_Magstep_Menu__
+MGv*menuBar.orientation.labelString: Orientation
+MGv*menuBar.orientation.mnemonic:    O
+MGv*menuBar.orientation.helpChapter: __URL_The_Orientation_Menu__
+MGv*menuBar.media.labelString:       Media
+MGv*menuBar.media.mnemonic:          a
+MGv*menuBar.media.helpChapter:       __URL_The_Media_Menu__
+MGv*menuBar.options.labelString:     Options
+MGv*menuBar.options.mnemonic:        s
+MGv*menuBar.options.helpChapter:     __URL_The_Options_Menu__
+MGv*menuBar.help.labelString:        Help
+MGv*menuBar.help.mnemonic:           H
+MGv*menuBar.help.helpChapter:        __URL_The_Help_Menu__

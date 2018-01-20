@@ -1,0 +1,9 @@
+! @(#)$Mu: mgv/ad/aboutDialog.ad 1.3 1999/09/19 16:48:00 $
+!#
+!# About dialog.
+!#
+m4_pushdef(`__PFX__',`MGv*aboutDialog')m4_dnl
+__PFX__.helpSection: help-about
+__PFX__.helpChapter: __URL_The_Help_Menu__
+m4_include(`wlib/about.ad')m4_dnl
+m4_popdef(`__PFX__')m4_dnl

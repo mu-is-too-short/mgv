@@ -1,0 +1,59 @@
+! @(#)$Mu: mgv/ad/fileMenu.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# File menu
+!#
+MGv*menuBar*file_pd*open.labelString:     Open...
+MGv*menuBar*file_pd*open.mnemonic:        O
+MGv*menuBar*file_pd*open.accelerator:     Ctrl<Key>O
+MGv*menuBar*file_pd*open.acceleratorText: Ctrl+O
+MGv*file_pd*open.helpSection:             file-open
+MGv*file_pd*open.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*open.wlStatusMessage:         Open a new file
+
+MGv*menuBar*file_pd*reopen.labelString:     Reopen
+MGv*menuBar*file_pd*reopen.mnemonic:        R
+MGv*menuBar*file_pd*reopen.accelerator:     Ctrl<Key>R
+MGv*menuBar*file_pd*reopen.acceleratorText: Ctrl+R
+MGv*file_pd*reopen.helpSection:             file-reopen
+MGv*file_pd*reopen.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*reopen.wlStatusMessage:         Reopen the current file
+
+MGv*menuBar*file_pd*save.labelString:     Save...
+MGv*menuBar*file_pd*save.mnemonic:        S
+MGv*menuBar*file_pd*save.accelerator:     Ctrl<Key>S
+MGv*menuBar*file_pd*save.acceleratorText: Ctrl+S
+MGv*file_pd*save.helpSection:             file-save
+MGv*file_pd*save.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*save.wlStatusMessage:         Save the current file
+
+MGv*menuBar*file_pd*print.labelString:     Print...
+MGv*menuBar*file_pd*print.mnemonic:        P
+MGv*menuBar*file_pd*print.accelerator:     Ctrl<Key>P
+MGv*menuBar*file_pd*print.acceleratorText: Ctrl+P
+MGv*file_pd*print.helpSection:             file-print
+MGv*file_pd*print.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*print.wlStatusMessage:         Print the current file
+
+MGv*menuBar*file_pd*info.labelString:     Info...
+MGv*menuBar*file_pd*info.mnemonic:        I
+MGv*menuBar*file_pd*info.accelerator:     Ctrl<Key>I
+MGv*menuBar*file_pd*info.acceleratorText: Ctrl+I
+MGv*file_pd*info.helpSection:             file-info
+MGv*file_pd*info.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*info.wlStatusMessage:         Get some information about the current file
+
+MGv*menuBar*file_pd*close.labelString:     Close
+MGv*menuBar*file_pd*close.mnemonic:        C
+MGv*menuBar*file_pd*close.accelerator:     Ctrl<Key>D
+MGv*menuBar*file_pd*close.acceleratorText: Ctrl+D
+MGv*file_pd*close.helpSection:             file-close
+MGv*file_pd*close.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*close.wlStatusMessage:         Close this viewing window
+
+MGv*menuBar*file_pd*exit.labelString:     Exit
+MGv*menuBar*file_pd*exit.mnemonic:        x
+MGv*menuBar*file_pd*exit.accelerator:     Ctrl<Key>C
+MGv*menuBar*file_pd*exit.acceleratorText: Ctrl+C
+MGv*file_pd*exit.helpSection:             file-exit
+MGv*file_pd*exit.helpChapter:             __URL_The_File_Menu__
+MGv*file_pd*exit.wlStatusMessage:         Exit the application

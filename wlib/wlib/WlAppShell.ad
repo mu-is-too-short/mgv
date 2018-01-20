@@ -1,0 +1,18 @@
+! @(#)$Mu: mgv/wlib/wlib/WlAppShell.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# WlAppShell.ad - resources for appshell widgets.
+!#
+
+!#
+!# Non-default visual/depth and colormap settings.
+!#
+!__CLS__*wlVisualClass:
+!__CLS__*wlVisualID:
+!__CLS__*wlDepth:
+!__CLS__*wlUsePrivateColormap:
+
+!#
+!# Editres support.  This resource won't do anything if the program
+!# was compiled without editres support.
+!#
+!__CLS__*wlUseEditRes: True

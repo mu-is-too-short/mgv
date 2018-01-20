@@ -1,0 +1,39 @@
+! @(#)$Mu: mgv/ad/helpMenu.ad 1.5 2001/03/09 16:22:38 $
+!#
+!# Help menu
+!#
+MGv*menuBar*help_pd*contents.labelString:  Contents
+MGv*menuBar*help_pd*contents.mnemonic:     C
+MGv*menuBar*help_pd*contents.helpChapter: __URL_CONTENTS__
+MGv*help_pd*contents.helpChapter:         __URL_CONTENTS__
+MGv*help_pd*contents.wlStatusMessage:     Show the table of contents in the help browser
+
+MGv*menuBar*help_pd*context.labelString:     On Context
+MGv*menuBar*help_pd*context.acceleratorText: F1
+MGv*menuBar*help_pd*context.mnemonic:        x
+MGv*help_pd*context.helpChapter:             __URL_The_Help_Menu__
+MGv*help_pd*context.helpSection:             help-context
+MGv*help_pd*context.wlStatusMessage:         Get help on a specified user interface element
+
+MGv*menuBar*help_pd*appres.labelString: On Application Resources
+MGv*menuBar*help_pd*appres.mnemonic:    A
+MGv*menuBar*help_pd*appres.helpChapter: __URL_Application_Resources__
+MGv*help_pd*appres.helpChapter:         __URL_Application_Resources__
+MGv*help_pd*appres.wlStatusMessage:     Get help on the application resources
+
+MGv*menuBar*help_pd*cmdline.labelString: On Command Line
+MGv*menuBar*help_pd*cmdline.mnemonic:    L
+MGv*menuBar*help_pd*cmdline.helpChapter: __URL_Command_Line_Switches__
+MGv*help_pd*cmdline.helpChapter:         __URL_Command_Line_Switches__
+MGv*help_pd*cmdline.wlStatusMessage:     Get help on the command line switches
+
+MGv*menuBar*help_pd*changelog.labelString: ChangeLog...
+MGv*menuBar*help_pd*changelog.mnemonic:    g
+MGv*help_pd*changelog.helpChapter:         __URL_History__
+MGv*help_pd*changelog.wlStatusMessage:     View the ChangeLog Page
+
+MGv*menuBar*help_pd*about.labelString: About...
+MGv*menuBar*help_pd*about.mnemonic:    b
+MGv*help_pd*about.helpChapter:         __URL_The_Help_Menu__
+MGv*help_pd*about.helpSection:         help-about
+MGv*help_pd*about.wlStatusMessage:     Show the program information dialog

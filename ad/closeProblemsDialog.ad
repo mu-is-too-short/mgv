@@ -1,0 +1,9 @@
+! @(#)$Mu: mgv/ad/closeProblemsDialog.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# Close problems dialog.
+!#
+MGv*closeProblem_popup.title:       MGv:  Continue Closing?
+MGv*closeProblem.okLabelString:     Yes
+MGv*closeProblem.cancelLabelString: No
+MGv*closeProblem.helpSection:       file-close
+MGv*closeProblem.helpChapter:       __URL_The_File_Menu__

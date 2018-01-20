@@ -1,0 +1,17 @@
+None of these files are needed for mgv to run; however, the files in the
+`help' directory are required for on-line help.
+
+Files:
+	MGv.gz
+		Application defaults file, the whole set of application
+		defaults are compiled into the mgv executable so this is
+		for reference only.
+	help/
+		HTML and PNG files for the on-line help.
+	icon-images.tar.gz
+		Various icon XPM and XBM files used by mgv.
+	splash-images.tar.gz
+		Splash screen XPM and XBM files, if you want a GIMP XCF
+		version you can mail mu@trends.net.
+	toolbar-images.tar.gz
+		Various XPM and XBM files used in the mgv toolbar.

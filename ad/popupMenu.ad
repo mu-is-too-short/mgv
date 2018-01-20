@@ -1,0 +1,61 @@
+! @(#)$Mu: mgv/ad/popupMenu.ad 1.2 1998/11/17 07:25:40 $
+!#
+!# Popup menu (almost same as the view menu except for the accelerators).
+!#
+MGv*popup*back.labelString:     Back
+MGv*popup*back.mnemonic:        B
+MGv*popup*back.accelerator:     Alt<Key>osfLeft
+MGv*popup*back.acceleratorText: Alt+Left
+MGv*popup*back.helpSection:     popup-back
+MGv*popup*back.helpChapter:     __URL_The_Popup_Menu__
+MGv*popup*back.wlStatusMessage: Go back in the page history
+
+MGv*popup*forward.labelString:     Forward
+MGv*popup*forward.mnemonic:        F
+MGv*popup*forward.accelerator:     Alt<Key>osfRight
+MGv*popup*forward.acceleratorText: Alt+Right
+MGv*popup*forward.helpSection:     popup-forward
+MGv*popup*forward.helpChapter:     __URL_The_Popup_Menu__
+MGv*popup*forward.wlStatusMessage: Go forward in the page history
+
+MGv*popup*hideLog.labelString:     Hide Log
+MGv*popup*hideLog.mnemonic:        L
+MGv*popup*hideLog.acceleratorText: Ctrl+L
+MGv*popup*hideLog.helpSection:     view-hidelog
+MGv*popup*hideLog.helpChapter:     __URL_The_View_Menu__
+MGv*popup*hideLog.wlStatusMessage: Hide or show the program log
+
+MGv*popup*hideList.labelString:     Hide Page List
+MGv*popup*hideList.mnemonic:        P
+MGv*popup*hideList.acceleratorText: Ctrl+G
+MGv*popup*hideList.helpSection:     view-hidelist
+MGv*popup*hideList.helpChapter:     __URL_The_View_Menu__
+MGv*popup*hideList.wlStatusMessage: Hide or show the page list
+
+MGv*popup*hideStatus.labelString:     Hide Status Line
+MGv*popup*hideStatus.mnemonic:        S
+MGv*popup*hideStatus.acceleratorText: Ctrl+T
+MGv*popup*hideStatus.helpSection:     view-hidestatus
+MGv*popup*hideStatus.helpChapter:     __URL_The_View_Menu__
+MGv*popup*hideStatus.wlStatusMessage: Hide or show the status line
+
+MGv*popup*hideMenu.labelString:     Hide Menu Bar
+MGv*popup*hideMenu.mnemonic:        M
+MGv*popup*hideMenu.acceleratorText: Ctrl+B
+MGv*popup*hideMenu.helpSection:     view-hidemenu
+MGv*popup*hideMenu.helpChapter:     __URL_The_View_Menu__
+MGv*popup*hideMenu.wlStatusMessage: Hide or show the menu bar
+
+MGv*popup*hideToolBar.labelString:     Hide Tool Bar
+MGv*popup*hideToolBar.mnemonic:        T
+MGv*popup*hideToolBar.acceleratorText: Alt+T
+MGv*popup*hideToolBar.helpSection:     view-hidetoolbar
+MGv*popup*hideToolBar.helpChapter:     __URL_The_View_Menu__
+MGv*popup*hideToolBar.wlStatusMessage: Hide or show the tool bar
+
+MGv*popup*closeZoom.labelString:     Close All Zooms
+MGv*popup*closeZoom.mnemonic:        Z
+MGv*popup*closeZoom.acceleratorText: Ctrl+Z
+MGv*popup*closeZoom.helpSection:     view-closezoom
+MGv*popup*closeZoom.helpChapter:     __URL_The_View_Menu__
+MGv*popup*closeZoom.wlStatusMessage: Close all of the zoom windows

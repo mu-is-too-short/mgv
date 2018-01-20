@@ -1,0 +1,85 @@
+! @(#)$Mu: mgv/ad/magstepMenu.ad 1.2 1998/11/17 07:20:39 $
+!#
+!# Magstep menu
+!#
+MGv*menuBar*magstep_pd.radioBehavior: True
+
+MGv*menuBar*magstep_pd*decrease.labelString:     Decrease
+MGv*menuBar*magstep_pd*decrease.mnemonic:        D
+MGv*menuBar*magstep_pd*decrease.accelerator:     Alt<Key>minus
+MGv*menuBar*magstep_pd*decrease.acceleratorText: Alt+-
+MGv*magstep_pd*decrease.helpSection:             magstep-incdec
+MGv*magstep_pd*decrease.helpChapter:             __URL_The_Magstep_Menu__
+MGv*magstep_pd*decrease.wlStatusMessage:         Decrease the magstep
+
+MGv*menuBar*magstep_pd*-5.labelString: -5
+MGv*magstep_pd*-5.helpSection:         magstep-numbers
+MGv*magstep_pd*-5.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*-5.wlStatusMessage:     Set the magstep to -5
+
+MGv*menuBar*magstep_pd*-4.labelString: -4
+MGv*magstep_pd*-4.helpSection:         magstep-numbers
+MGv*magstep_pd*-4.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*-4.wlStatusMessage:     Set the magstep to -4
+
+MGv*menuBar*magstep_pd*-3.labelString: -3
+MGv*magstep_pd*-3.helpSection:         magstep-numbers
+MGv*magstep_pd*-3.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*-3.wlStatusMessage:     Set the magstep to -3
+
+MGv*menuBar*magstep_pd*-2.labelString: -2
+MGv*magstep_pd*-2.helpSection:         magstep-numbers
+MGv*magstep_pd*-2.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*-2.wlStatusMessage:     Set the magstep to -2
+
+MGv*menuBar*magstep_pd*-1.labelString: -1
+MGv*magstep_pd*-1.helpSection:         magstep-numbers
+MGv*magstep_pd*-1.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*-1.wlStatusMessage:     Set the magstep to -1
+
+MGv*menuBar*magstep_pd*0.labelString:     Normal
+MGv*menuBar*magstep_pd*0.mnemonic:        N
+MGv*menuBar*magstep_pd*0.accelerator:     Alt<Key>0
+MGv*menuBar*magstep_pd*0.acceleratorText: Alt+0
+MGv*magstep_pd*0.helpSection:             magstep-numbers
+MGv*magstep_pd*0.helpChapter:             __URL_The_Magstep_Menu__
+MGv*magstep_pd*0.wlStatusMessage:         Set the magstep to zero
+
+MGv*menuBar*magstep_pd*1.labelString: +1
+MGv*magstep_pd*1.helpSection:         magstep-numbers
+MGv*magstep_pd*1.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*1.wlStatusMessage:     Set the magstep to 1
+
+MGv*menuBar*magstep_pd*2.labelString: +2
+MGv*magstep_pd*2.helpSection:         magstep-numbers
+MGv*magstep_pd*2.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*2.wlStatusMessage:     Set the magstep to 2
+
+MGv*menuBar*magstep_pd*3.labelString: +3
+MGv*magstep_pd*3.helpSection:         magstep-numbers
+MGv*magstep_pd*3.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*3.wlStatusMessage:     Set the magstep to 3
+
+MGv*menuBar*magstep_pd*4.labelString: +4
+MGv*magstep_pd*4.helpSection:         magstep-numbers
+MGv*magstep_pd*4.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*4.wlStatusMessage:     Set the magstep to 4
+
+MGv*menuBar*magstep_pd*5.labelString: +5
+MGv*magstep_pd*5.helpSection:         magstep-numbers
+MGv*magstep_pd*5.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*5.wlStatusMessage:     Set the magstep to 5
+
+MGv*menuBar*magstep_pd*increase.labelString:     Increase
+MGv*menuBar*magstep_pd*increase.mnemonic:        I
+MGv*menuBar*magstep_pd*increase.accelerator:     Alt<Key>plus
+MGv*menuBar*magstep_pd*increase.acceleratorText: Alt++
+MGv*magstep_pd*increase.helpSection:             magstep-incdec
+MGv*magstep_pd*increase.helpChapter:             __URL_The_Magstep_Menu__
+MGv*magstep_pd*increase.wlStatusMessage:         Increase the magstep
+
+MGv*menuBar*magstep_pd*set.labelString: Set...
+MGv*menuBar*magstep_pd*set.mnemonic:    S
+MGv*magstep_pd*set.helpSection:         magstep-set
+MGv*magstep_pd*set.helpChapter:         __URL_The_Magstep_Menu__
+MGv*magstep_pd*set.wlStatusMessage:     Set the magstep to an arbitrary value

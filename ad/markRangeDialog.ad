@@ -1,0 +1,52 @@
+! @(#)$Mu: mgv/ad/markRangeDialog.ad 1.5 2001/04/09 17:58:21 $
+!#
+!# Mark range dialog.
+!#
+MGv*markRangeDialog_popup.title:     MGv:  Mark Range
+MGv*markRangeDialog.fractionBase:    7
+MGv*markRangeDialog.autoUnmanage:    False
+MGv*markRangeDialog.wlInitialFocus:  *fromText
+MGv*markRangeDialog.wlDefaultButton: *apply
+MGv*markRangeDialog.wlCancelButton:  *dismiss
+MGv*markRangeDialog.wlAutoDismiss:   True
+MGv*markRangeDialog.helpChapter:     __URL_The_Mark_Menu__
+MGv*markRangeDialog.helpSection:     mark-range-dialog
+
+MGv*markRangeDialog*rc.orientation:     vertical
+MGv*markRangeDialog*rc.numColumns:      5
+MGv*markRangeDialog*rc.packing:         pack_column
+MGv*markRangeDialog*rc.entryAlignment:  alignment_center
+MGv*markRangeDialog*rc.isAligned:       true
+MGv*markRangeDialog*rc.topAttachment:   attach_form
+MGv*markRangeDialog*rc.leftAttachment:  attach_form
+MGv*markRangeDialog*rc.rightAttachment: attach_form
+
+MGv*markRangeDialog*rc*fromLabel.labelString: From:
+MGv*markRangeDialog*rc*toLabel.labelString:   To:
+MGv*markRangeDialog*rc*hackLabel.labelString:
+
+MGv*markRangeDialog*rc*XmTextField.columns:  5
+MGv*markRangeDialog*rc*XmTextField.editable: True
+
+MGv*markRangeDialog.apply.labelString:      Mark
+MGv*markRangeDialog.apply.leftAttachment:   attach_position
+MGv*markRangeDialog.apply.leftPosition:     1
+MGv*markRangeDialog.apply.rightAttachment:  attach_position
+MGv*markRangeDialog.apply.rightPosition:    3
+MGv*markRangeDialog.apply.bottomAttachment: attach_form
+
+MGv*markRangeDialog.dismiss.labelString:      Dismiss
+MGv*markRangeDialog.dismiss.leftAttachment:   attach_position
+MGv*markRangeDialog.dismiss.leftPosition:     4
+MGv*markRangeDialog.dismiss.rightAttachment:  attach_position
+MGv*markRangeDialog.dismiss.rightPosition:    6
+MGv*markRangeDialog.dismiss.bottomAttachment: attach_form
+
+MGv*markRangeDialog.sep.topAttachment:    attach_widget
+MGv*markRangeDialog.sep.topWidget:        rc
+MGv*markRangeDialog.sep.bottomAttachment: attach_widget
+MGv*markRangeDialog.sep.bottomWidget:     apply
+MGv*markRangeDialog.sep.rightAttachment:  attach_form
+MGv*markRangeDialog.sep.rightOffset:      0
+MGv*markRangeDialog.sep.leftAttachment:   attach_form
+MGv*markRangeDialog.sep.leftOffset:       0

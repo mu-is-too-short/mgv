@@ -1,0 +1,42 @@
+! @(#)$Mu: mgv/wlib/wlib/bldopts.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# bldopts.ad - application defaults for the wlib standard build options box
+!#
+m4_dnl
+m4_dnl Build options dialog.  You should set the following resources in your
+m4_dnl application defaults file:
+m4_dnl
+m4_dnl *bldoptsDialog.helpChapter
+m4_dnl *bldoptsDialog.helpSection
+m4_dnl
+m4_dnl __CLS__ should be substituted with your application's class name.
+m4_dnl
+m4_pushdef(`__POP__',m4_format(`%s_popup',__PFX__))m4_dnl
+__POP__.title:     __CLS__: Build Options
+__PFX__.wlDefaultButton: *dismiss
+__PFX__.wlCancelButton:  *dismiss
+
+__PFX__.dismiss.labelString:      Dismiss
+__PFX__.dismiss.bottomAttachment: attach_form
+__PFX__.dismiss.leftAttachment:   attach_form
+__PFX__.dismiss.rightAttachment:  attach_form
+
+__PFX__.sep.rightAttachment:  attach_form
+__PFX__.sep.rightOffset:      0
+__PFX__.sep.leftAttachment:   attach_form
+__PFX__.sep.leftOffset:       0
+__PFX__.sep.bottomAttachment: attach_widget
+__PFX__.sep.bottomWidget:     dismiss
+
+__PFX__.textSW.topAttachment:    attach_form
+__PFX__.textSW.leftAttachment:   attach_form
+__PFX__.textSW.rightAttachment:  attach_form
+__PFX__.textSW.bottomAttachment: attach_widget
+__PFX__.textSW.bottomWidget:     sep
+
+__PFX__.textSW.text*rows:     10
+__PFX__.textSW.text*columns:  70
+__PFX__.textSW.text*editable: False
+__PFX__.textSW.text*editMode: multi_line_edit
+__PFX__.textSW.text*fontList: -*-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
+m4_popdef(`__POP__')m4_dnl

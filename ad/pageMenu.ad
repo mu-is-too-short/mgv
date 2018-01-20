@@ -1,0 +1,82 @@
+! @(#)$Mu: mgv/ad/pageMenu.ad 1.4 2001/04/09 17:47:25 $
+!#
+!# Page menu.
+!#
+MGv*menuBar*page_pd*next.labelString:      Next
+MGv*menuBar*page_pd*next.mnemonic:         N
+MGv*menuBar*page_pd*next.accelerator:      <Key>Page_Down
+MGv*menuBar*page_pd*next.acceleratorText:  PageDown
+MGv*page_pd*next.helpSection:              page-nextprev
+MGv*page_pd*next.helpChapter:              __URL_The_Page_Menu__
+MGv*page_pd*next.wlStatusMessage:          Go to the next page
+
+MGv*menuBar*page_pd*prev.labelString:      Previous
+MGv*menuBar*page_pd*prev.mnemonic:         P
+MGv*menuBar*page_pd*prev.accelerator:      <Key>Page_Up
+MGv*menuBar*page_pd*prev.acceleratorText:  PageUp
+MGv*page_pd*prev.helpSection:              page-nextprev
+MGv*page_pd*prev.helpChapter:              __URL_The_Page_Menu__
+MGv*page_pd*prev.wlStatusMessage:          Go to the previous page
+
+MGv*menuBar*page_pd*center.labelString:      Center
+MGv*menuBar*page_pd*center.mnemonic:         C
+MGv*menuBar*page_pd*center.accelerator:      Alt<Key>C
+MGv*menuBar*page_pd*center.acceleratorText:  Alt+C
+MGv*page_pd*center.helpSection:              page-center
+MGv*page_pd*center.helpChapter:              __URL_The_Page_Menu__
+MGv*page_pd*center.wlStatusMessage:          Toggle page centering on or off
+
+MGv*menuBar*page_pd*redisplay.labelString:      Redisplay
+MGv*menuBar*page_pd*redisplay.mnemonic:         R
+MGv*menuBar*page_pd*redisplay.accelerator:      Alt<Key>R
+MGv*menuBar*page_pd*redisplay.acceleratorText:  Alt+R
+MGv*page_pd*redisplay.helpSection:              page-redisplay
+MGv*page_pd*redisplay.helpChapter:              __URL_The_Page_Menu__
+MGv*page_pd*redisplay.wlStatusMessage:          Redraw the current page
+
+MGv*menuBar*page_pd*showLabels.labelString:      Show Page Labels
+MGv*menuBar*page_pd*showLabels.mnemonic:         b
+MGv*menuBar*page_pd*showLabels.accelerator:      Alt<Key>B
+MGv*menuBar*page_pd*showLabels.acceleratorText:  Alt+B
+MGv*page_pd*showLabels.helpSection:              show-labelsnums
+MGv*page_pd*showLabels.helpChapter:              __URL_The_Page_Menu__
+MGv*page_pd*showLabels.wlStatusMessage:          Enable or disable page labels in the page list
+
+MGv*menuBar*page_pd*showPgNums.labelString:      Show Page Numbers
+MGv*menuBar*page_pd*showPgNums.mnemonic:         N
+MGv*menuBar*page_pd*showPgNums.accelerator:      Alt<Key>N
+MGv*menuBar*page_pd*showPgNums.acceleratorText:  Alt+N
+MGv*page_pd*showPgNums.helpSection:              show-labelsnums
+MGv*page_pd*showPgNums.helpChapter:              __URL_The_Page_Menu__
+MGv*page_pd*showPgNums.wlStatusMessage:          Enable or disable page numbers in the page list
+
+MGv*menuBar*size_pd.radioBehavior:     True
+MGv*menuBar*size_pd.helpChapter:       __URL_The_Page_Menu__
+MGv*menuBar*page_pd.size.labelString:  Automatic Sizing
+MGv*menuBar*page_pd.size.mnemonic:     A
+MGv*page_pd*size.helpChapter:          __URL_The_Page_Menu__
+MGv*page_pd*size.helpSection:          page-autosize
+
+MGv*menuBar*size_pd*size.labelString:      Width & Height
+MGv*menuBar*size_pd*size.mnemonic:         i
+MGv*size_pd*size.helpSection:              page-autosize
+MGv*size_pd*size.helpChapter:              __URL_The_Page_Menu__
+MGv*size_pd*size.wlStatusMessage:          Size the window to fit an entire page
+
+MGv*menuBar*size_pd*height.labelString:      Height
+MGv*menuBar*size_pd*height.mnemonic:         H
+MGv*size_pd*height.helpSection:              page-autosize
+MGv*size_pd*height.helpChapter:              __URL_The_Page_Menu__
+MGv*size_pd*height.wlStatusMessage:          Make the window tall enough for an entire page
+
+MGv*menuBar*size_pd*width.labelString:      Width
+MGv*menuBar*size_pd*width.mnemonic:         W
+MGv*size_pd*width.helpSection:              page-autosize
+MGv*size_pd*width.helpChapter:              __URL_The_Page_Menu__
+MGv*size_pd*width.wlStatusMessage:          Make the window wide enough for an entire page
+
+MGv*menuBar*size_pd*none.labelString:      None
+MGv*menuBar*size_pd*none.mnemonic:         N
+MGv*size_pd*none.helpSection:              page-autosize
+MGv*size_pd*none.helpChapter:              __URL_The_Page_Menu__
+MGv*size_pd*none.wlStatusMessage:          Don't do anything with the window size

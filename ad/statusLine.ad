@@ -1,0 +1,57 @@
+! @(#)$Mu: mgv/ad/statusLine.ad 1.3 2001/03/14 13:34:56 $
+!#
+!# Status line.
+!#
+MGv*statusLine.bottomAttachment:  attach_form
+MGv*statusLine.leftAttachment:    attach_form
+MGv*statusLine.rightAttachment:   attach_form
+MGv*statusLine.verticalSpacing:   0
+MGv*statusLine.horizontalSpacing: 0
+
+MGv*statusLine*magstepFrame.shadowType:       shadow_in
+MGv*statusLine*magstepFrame.topAttachment:    attach_form
+MGv*statusLine*magstepFrame.bottomAttachment: attach_form
+MGv*statusLine*magstepFrame.leftAttachment:   attach_form
+
+MGv*statusLine*magstepFrame*value.labelString:      000
+MGv*statusLine*magstepFrame*value.marginHeight:     0
+MGv*statusLine*magstepFrame*value.traversalOn:      False
+MGv*statusLine*magstepFrame*value.topAttachment:    attach_form
+MGv*statusLine*magstepFrame*value.bottomAttachment: attach_form
+MGv*statusLine*magstepFrame*value.rightAttachment:  attach_form
+MGv*statusLine*magstepFrame*text.columns:           3
+MGv*statusLine*magstepFrame*text.shadowThickness:   0
+MGv*statusLine*magstepFrame*text.marginHeight:      0
+MGv*statusLine*magstepFrame*text.topAttachment:     attach_form
+MGv*statusLine*magstepFrame*text.bottomAttachment:  attach_form
+MGv*statusLine*magstepFrame*text.rightAttachment:   attach_form
+
+MGv*statusLine*magstepFrame*label.labelString:      Magstep:
+MGv*statusLine*magstepFrame*label.topAttachment:    attach_form
+MGv*statusLine*magstepFrame*label.bottomAttachment: attach_form
+MGv*statusLine*magstepFrame*label.leftAttachment:   attach_form
+MGv*statusLine*magstepFrame*label.rightAttachment:  attach_widget
+MGv*statusLine*magstepFrame*label.rightWidget:      value
+MGv*statusLine*magstepFrame*label.marginWidth:      3
+MGv*statusLine*magstepFrame*label.marginHeight:     3
+
+MGv*statusLine*trackerFrame.shadowType:       shadow_in
+MGv*statusLine*trackerFrame.topAttachment:    attach_form
+MGv*statusLine*trackerFrame.bottomAttachment: attach_form
+MGv*statusLine*trackerFrame.leftAttachment:   attach_widget
+MGv*statusLine*trackerFrame.leftWidget:       magstepFrame
+MGv*statusLine*tracker.labelString:           (?,?)
+MGv*statusLine*tracker.marginWidth:           3
+MGv*statusLine*tracker.marginHeight:          3
+
+MGv*statusLine*statusFrame.shadowType:       shadow_in
+MGv*statusLine*statusFrame.topAttachment:    attach_form
+MGv*statusLine*statusFrame.bottomAttachment: attach_form
+MGv*statusLine*statusFrame.leftAttachment:   attach_widget
+MGv*statusLine*statusFrame.leftWidget:       trackerFrame
+MGv*statusLine*statusFrame.rightAttachment:  attach_form
+MGv*statusLine*wlStatusLabel.labelString:
+MGv*statusLine*wlStatusLabel.alignment:      alignment_beginning
+MGv*statusLine*wlStatusLabel.marginWidth:    3
+MGv*statusLine*wlStatusLabel.marginHeight:   3
+MGv*statusLine*wlStatusLabel.fontList:       -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1

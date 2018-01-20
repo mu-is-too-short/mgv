@@ -1,0 +1,182 @@
+! @(#)$Mu: mgv/ad/mediaMenu.ad 1.6 1999/09/22 17:30:20 $
+!#
+!# Media menu
+!#
+MGv*menuBar*media_pd*radioBehavior: True
+
+MGv*menuBar*media_pd.mediaUS.labelString:  US Sizes
+MGv*menuBar*media_pd.mediaA.labelString:   ISO A Sizes
+MGv*menuBar*media_pd.mediaB.labelString:   ISO B Sizes
+MGv*menuBar*media_pd.mediaC.labelString:   ISO C Sizes
+
+MGv*menuBar*media_pd*letter.labelString: Letter
+MGv*media_pd*letter.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*letter.wlStatusMessage:     Set the media to Letter (8.5x11 inches)
+
+MGv*menuBar*media_pd*lettersmall.labelString: Letter Small
+MGv*media_pd*lettersmall.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*lettersmall.wlStatusMessage:     Set the media to Letter Small (8.5x11 inches)
+
+MGv*menuBar*media_pd*halfletter.labelString: Half Letter
+MGv*media_pd*halfletter.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*halfletter.wlStatusMessage:     Set the media to Half Letter (5.5x8.5 inches)
+
+MGv*menuBar*media_pd*tabloid.labelString: Tabloid
+MGv*media_pd*tabloid.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*tabloid.wlStatusMessage:     Set the media to Tabloid (11x17 inches)
+
+MGv*menuBar*media_pd*ledger.labelString: Ledger
+MGv*media_pd*ledger.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*ledger.wlStatusMessage:     Set the media to Ledger (17x11 inches)
+
+MGv*menuBar*media_pd*legal.labelString: Legal
+MGv*media_pd*legal.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*legal.wlStatusMessage:     Set the media to Legal (8x14 inches)
+
+MGv*menuBar*media_pd*statement.labelString: Statement
+MGv*media_pd*statement.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*statement.wlStatusMessage:     Set the media to Statement (5x8 inches)
+
+MGv*menuBar*media_pd*executive.labelString: Executive
+MGv*media_pd*executive.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*executive.wlStatusMessage:     Set the media to Executive (7x10 inches)
+
+MGv*menuBar*media_pd*foolscap.labelString: Foolscap
+MGv*media_pd*foolscap.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*foolscap.wlStatusMessage:     Set the media to Foolscap (8.5x13 inches)
+
+MGv*menuBar*media_pd*folio.labelString: Folio
+MGv*media_pd*folio.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*folio.wlStatusMessage:     Set the media to Folio (8x13 inches)
+
+MGv*menuBar*media_pd*quarto.labelString: Quarto
+MGv*media_pd*quarto.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*quarto.wlStatusMessage:     Set the media to Quarto (610x780)
+
+MGv*menuBar*media_pd*10x14.labelString: 10x14
+MGv*media_pd*10x14.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*10x14.wlStatusMessage:     Set the media to 10x14 (10x14 inches)
+
+MGv*menuBar*media_pd*11x17.labelString: 11x17
+MGv*media_pd*11x17.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*11x17.wlStatusMessage:     Set the media to 11x17 (11x17 inches)
+
+MGv*menuBar*media_pd*archA.labelString: archA
+MGv*media_pd*archA.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*archA.wlStatusMessage:     Set the media to archA (9x12 inches)
+
+MGv*menuBar*media_pd*archB.labelString: archB
+MGv*media_pd*archB.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*archB.wlStatusMessage:     Set the media to archB (12x18 inches)
+
+MGv*menuBar*media_pd*archC.labelString: archC
+MGv*media_pd*archC.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*archC.wlStatusMessage:     Set the media to archC (18x24 inches)
+
+MGv*menuBar*media_pd*archD.labelString: archD
+MGv*media_pd*archD.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*archD.wlStatusMessage:     Set the media to archD (24x36 inches)
+
+MGv*menuBar*media_pd*archE.labelString: archE
+MGv*media_pd*archE.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*archE.wlStatusMessage:     Set the media to archE (36x48 inches)
+
+MGv*menuBar*media_pd*a0.labelString: A0
+MGv*media_pd*a0.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a0.wlStatusMessage:     Set the media to A0 (84.0x118.8 cm)
+
+MGv*menuBar*media_pd*a1.labelString: A1
+MGv*media_pd*a1.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a1.wlStatusMessage:     Set the media to A1 (59.4x84.0 cm)
+
+MGv*menuBar*media_pd*a2.labelString: A2
+MGv*media_pd*a2.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a2.wlStatusMessage:     Set the media to A2 (42.0x59.4 cm)
+
+MGv*menuBar*media_pd*a3.labelString: A3
+MGv*media_pd*a3.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a3.wlStatusMessage:     Set the media to A3 (29.7x42.0 cm)
+
+MGv*menuBar*media_pd*a4.labelString: A4
+MGv*media_pd*a4.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a4.wlStatusMessage:     Set the media to A4 (21.0x29.7 cm)
+
+MGv*menuBar*media_pd*a4small.labelString: A4SMALL
+MGv*media_pd*a4small.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a4small.wlStatusMessage:     Set the media to A4SMALL (21.0x29.7 cm)
+
+MGv*menuBar*media_pd*a5.labelString: A5
+MGv*media_pd*a5.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a5.wlStatusMessage:     Set the media to A5 (14.9x21.0 cm)
+
+MGv*menuBar*media_pd*a6.labelString: A6
+MGv*media_pd*a6.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a6.wlStatusMessage:     Set the media to A6 (10.5x14.9 cm)
+
+MGv*menuBar*media_pd*a7.labelString: A7
+MGv*media_pd*a7.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a7.wlStatusMessage:     Set the media to A7 (7.4x10.5 cm)
+
+MGv*menuBar*media_pd*a8.labelString: A8
+MGv*media_pd*a8.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a8.wlStatusMessage:     Set the media to A8 (5.2x7.4 cm)
+
+MGv*menuBar*media_pd*a9.labelString: A9
+MGv*media_pd*a9.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a9.wlStatusMessage:     Set the media to A9 (3.7x5.2 cm)
+
+MGv*menuBar*media_pd*a10.labelString: A10
+MGv*media_pd*a10.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*a10.wlStatusMessage:     Set the media to A10 (2.6x3.7 cm)
+
+MGv*menuBar*media_pd*b0.labelString: B0
+MGv*media_pd*b0.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*b0.wlStatusMessage:     Set the media to B0 (100.0x141.4 cm)
+
+MGv*menuBar*media_pd*b1.labelString: B1
+MGv*media_pd*b1.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*b1.wlStatusMessage:     Set the media to B1 (70.7x100.0 cm)
+
+MGv*menuBar*media_pd*b2.labelString: B2
+MGv*media_pd*b2.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*b2.wlStatusMessage:     Set the media to B2 (50.0x70.7 cm)
+
+MGv*menuBar*media_pd*b3.labelString: B3
+MGv*media_pd*b3.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*b3.wlStatusMessage:     Set the media to B3 (35.3x50.0 cm)
+
+MGv*menuBar*media_pd*b4.labelString: B4
+MGv*media_pd*b4.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*b4.wlStatusMessage:     Set the media to B4 (25.0x35.3 cm)
+
+MGv*menuBar*media_pd*b5.labelString: B5
+MGv*media_pd*b5.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*b5.wlStatusMessage:     Set the media to B5 (17.7x25.0 cm)
+
+MGv*menuBar*media_pd*c0.labelString: C0
+MGv*media_pd*c0.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c0.wlStatusMessage:     Set the media to C0 (91.7x129.7 cm)
+
+MGv*menuBar*media_pd*c1.labelString: C1
+MGv*media_pd*c1.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c1.wlStatusMessage:     Set the media to C1 (64.8x91.7 cm)
+
+MGv*menuBar*media_pd*c2.labelString: C2
+MGv*media_pd*c2.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c2.wlStatusMessage:     Set the media to C2 (45.8x64.8 cm)
+
+MGv*menuBar*media_pd*c3.labelString: C3
+MGv*media_pd*c3.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c3.wlStatusMessage:     Set the media to C3 (32.4x45.8 cm)
+
+MGv*menuBar*media_pd*c4.labelString: C4
+MGv*media_pd*c4.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c4.wlStatusMessage:     Set the media to C4 (22.9x32.4 cm)
+
+MGv*menuBar*media_pd*c5.labelString: C5
+MGv*media_pd*c5.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c5.wlStatusMessage:     Set the media to C5 (16.2x22.9 cm)
+
+MGv*menuBar*media_pd*c6.labelString: C6
+MGv*media_pd*c6.helpChapter:         __URL_The_Media_Menu__
+MGv*media_pd*c6.wlStatusMessage:     Set the media to C6 (11.4x16.2 cm)

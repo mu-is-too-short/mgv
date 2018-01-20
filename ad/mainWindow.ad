@@ -1,0 +1,49 @@
+! @(#)$Mu: mgv/ad/mainWindow.ad 1.4 2001/03/11 18:47:30 $
+!#
+!# main window layout/configuration
+!#
+MGv*mainWindow.helpChapter:             __URL_The_Main_Window__
+MGv*mainWindow.menuBar.topAttachment:   attach_form
+MGv*mainWindow.menuBar.leftAttachment:  attach_form
+MGv*mainWindow.menuBar.rightAttachment: attach_form
+
+MGv*mainWindow*toolBar.orientation:      XmHORIZONTAL
+MGv*mainWindow*toolBar.topAttachment:    attach_widget
+MGv*mainWindow*toolBar.topWidget:        menuBar
+MGv*mainWindow*toolBar.leftAttachment:   attach_form
+MGv*mainWindow*toolBar.rightAttachment:  attach_form
+
+!#
+!# the page list
+!#
+MGv*mainWindow.listSW.rightAttachment:             attach_form
+MGv*mainWindow.listSW.topAttachment:               attach_widget
+MGv*mainWindow.listSW.topWidget:                   toolBar
+MGv*mainWindow.listSW.bottomAttachment:            attach_widget
+MGv*mainWindow.listSW.bottomWidget:                statusLine
+MGv*mainWindow.listSW.scrollBarPlacement:          bottom_right
+MGv*mainWindow.listSW.scrollBarDisplayPolicy:      static
+MGv*mainWindow.listSW.visualPolicy:                variable
+MGv*mainWindow.listSW.resizable:                   True
+MGv*mainWindow.listSW*list.scrollBarDisplayPolicy: static
+MGv*mainWindow.listSW*list.selectionPolicy:        browse_select
+MGv*mainWindow.listSW*list.resizePolicy:           resize_if_possible
+MGv*mainWindow.listSW*list.fontList:               -*-helvetica-medium-r-normal--12-*-*-*-*-*-iso8859-1=UNMARKED,-*-helvetica-bold-o-normal--12-*-*-*-*-*-iso8859-1=MARKED
+
+!#
+!# for the view widget (this is the main scrolled window)
+!#
+MGv*mainWindow.view*traversalOn:            false
+MGv*mainWindow.view.scrollBarDisplayPolicy: static
+MGv*mainWindow.view.topAttachment:          attach_widget
+MGv*mainWindow.view.topWidget:              toolBar
+MGv*mainWindow.view.rightAttachment:        attach_widget
+MGv*mainWindow.view.rightWidget:            listSW
+MGv*mainWindow.view.leftAttachment:         attach_form
+MGv*mainWindow.view.bottomAttachment:       attach_widget
+MGv*mainWindow.view.bottomWidget:           statusLine
+MGv*mainWindow.view.scrollingPolicy:        automatic
+MGv*mainWindow.view.width:                  400
+MGv*mainWindow.view.height:                 400
+MGv*mainWindow.view.mgv.cursor:             crosshair
+MGv*mainWindow.view.mgv.busyCursor:         watch

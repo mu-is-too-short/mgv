@@ -1,0 +1,69 @@
+! @(#)$Mu: mgv/wlib/wlib/log.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# log.ad - application defaults for wlib standard log dialog
+!#
+m4_dnl The log dialog.  You should set the following resources in your
+m4_dnl application defaults file:
+m4_dnl
+m4_dnl *log_popup.title
+m4_dnl *log.helpChapter
+m4_dnl *log.helpSection
+m4_dnl
+m4_dnl And the following resources for the log-save file selector:
+m4_dnl
+m4_dnl *log*logSave_popup.title
+m4_dnl *log*logSave.dirMask
+m4_dnl *log*logSave.helpChapter
+m4_dnl *log*logSave.helpSection
+m4_dnl
+m4_dnl __CLS__ should be substituted with your application's class name.
+m4_dnl
+__PFX__.autoUnmanage: False
+__PFX__.fractionBase: 13
+
+__PFX__.hide.labelString:      Hide
+__PFX__.hide.leftAttachment:   attach_position
+__PFX__.hide.leftPosition:     1
+__PFX__.hide.rightAttachment:  attach_position
+__PFX__.hide.rightPosition:    3
+__PFX__.hide.bottomAttachment: attach_form
+
+__PFX__.save.labelString:      Save
+__PFX__.save.leftAttachment:   attach_position
+__PFX__.save.leftPosition:     4
+__PFX__.save.rightAttachment:  attach_position
+__PFX__.save.rightPosition:    6
+__PFX__.save.bottomAttachment: attach_form
+
+__PFX__.clear.labelString:      Clear
+__PFX__.clear.leftAttachment:   attach_position
+__PFX__.clear.leftPosition:     7
+__PFX__.clear.rightAttachment:  attach_position
+__PFX__.clear.rightPosition:    9
+__PFX__.clear.bottomAttachment: attach_form
+
+__PFX__.help.labelString:      Help
+__PFX__.help.leftAttachment:   attach_position
+__PFX__.help.leftPosition:     10
+__PFX__.help.rightAttachment:  attach_position
+__PFX__.help.rightPosition:    12
+__PFX__.help.bottomAttachment: attach_form
+
+__PFX__.sep.leftAttachment:   attach_form
+__PFX__.sep.leftOffset:       0
+__PFX__.sep.rightAttachment:  attach_form
+__PFX__.sep.rightOffset:      0
+__PFX__.sep.bottomAttachment: attach_widget
+__PFX__.sep.bottomWidget:     help
+
+__PFX__.textSW.scrollBarDisplayPolicy: static
+__PFX__.textSW.topAttachment:          attach_form
+__PFX__.textSW.leftAttachment:         attach_form
+__PFX__.textSW.rightAttachment:        attach_form
+__PFX__.textSW.bottomAttachment:       attach_widget
+__PFX__.textSW.bottomWidget:           sep
+
+__PFX__.textSW.text*rows:     15
+__PFX__.textSW.text*columns:  40
+__PFX__.textSW.text*editMode: multi_line_edit
+__PFX__.textSW.text*fontList: -*-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-iso8859-1

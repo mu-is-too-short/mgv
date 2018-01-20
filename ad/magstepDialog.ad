@@ -1,0 +1,72 @@
+! @(#)$Mu: mgv/ad/magstepDialog.ad 1.3 1998/11/23 22:15:39 $
+!#
+!# Magstep dialog.
+!#
+MGv*magstepDialog_popup.title:     MGv:  Set Magstep
+MGv*magstepDialog.fractionBase:    13
+MGv*magstepDialog.autoUnmanage:    False
+MGv*magstepDialog.wlInitialFocus:  *text
+MGv*magstepDialog.wlDefaultButton: *apply
+MGv*magstepDialog.wlCancelButton:  *dismiss
+MGv*magstepDialog.wlAutoDismiss:   True
+MGv*magstepDialog.helpChapter:     __URL_The_Magstep_Menu__
+MGv*magstepDialog.helpSection:     magstep-set
+
+MGv*magstepDialog.form.topAttachment:          attach_form
+MGv*magstepDialog.form.rightAttachment:        attach_form
+MGv*magstepDialog.form.leftAttachment:         attach_form
+MGv*magstepDialog.form.label.labelString:      Magstep:
+MGv*magstepDialog.form.label.topAttachment:    attach_form
+MGv*magstepDialog.form.label.leftAttachment:   attach_form
+MGv*magstepDialog.form.label.bottomAttachment: attach_form
+
+MGv*magstepDialog.form.decr.arrowDirection:   arrow_down
+MGv*magstepDialog.form.decr.multiClick:       multiclick_keep
+MGv*magstepDialog.form.decr.topAttachment:    attach_form
+MGv*magstepDialog.form.decr.bottomAttachment: attach_form
+MGv*magstepDialog.form.decr.rightAttachment:  attach_form
+
+MGv*magstepDialog.form.incr.arrowDirection:   arrow_up
+MGv*magstepDialog.form.incr.multiClick:       multiclick_keep
+MGv*magstepDialog.form.incr.topAttachment:    attach_form
+MGv*magstepDialog.form.incr.bottomAttachment: attach_form
+MGv*magstepDialog.form.incr.rightAttachment:  attach_widget
+MGv*magstepDialog.form.incr.rightWidget:      decr
+
+MGv*magstepDialog.form.text.columns:          5
+MGv*magstepDialog.form.text.topAttachment:    attach_form
+MGv*magstepDialog.form.text.rightAttachment:  attach_widget
+MGv*magstepDialog.form.text.rightWidget:      incr
+MGv*magstepDialog.form.text.bottomAttachment: attach_form
+MGv*magstepDialog.form.text.leftAttachment:   attach_widget
+MGv*magstepDialog.form.text.leftWidget:       label
+
+MGv*magstepDialog.apply.labelString:      OK
+MGv*magstepDialog.apply.leftAttachment:   attach_position
+MGv*magstepDialog.apply.leftPosition:     1
+MGv*magstepDialog.apply.rightAttachment:  attach_position
+MGv*magstepDialog.apply.rightPosition:    4
+MGv*magstepDialog.apply.bottomAttachment: attach_form
+
+MGv*magstepDialog.dismiss.labelString:      Dismiss
+MGv*magstepDialog.dismiss.leftAttachment:   attach_position
+MGv*magstepDialog.dismiss.leftPosition:     5
+MGv*magstepDialog.dismiss.rightAttachment:  attach_position
+MGv*magstepDialog.dismiss.rightPosition:    8
+MGv*magstepDialog.dismiss.bottomAttachment: attach_form
+
+MGv*magstepDialog.help.labelString:      Help
+MGv*magstepDialog.help.leftAttachment:   attach_position
+MGv*magstepDialog.help.leftPosition:     9
+MGv*magstepDialog.help.rightAttachment:  attach_position
+MGv*magstepDialog.help.rightPosition:    12
+MGv*magstepDialog.help.bottomAttachment: attach_form
+
+MGv*magstepDialog.sep.topAttachment:    attach_widget
+MGv*magstepDialog.sep.topWidget:        form
+MGv*magstepDialog.sep.bottomAttachment: attach_widget
+MGv*magstepDialog.sep.bottomWidget:     apply
+MGv*magstepDialog.sep.rightAttachment:  attach_form
+MGv*magstepDialog.sep.rightOffset:      0
+MGv*magstepDialog.sep.leftAttachment:   attach_form
+MGv*magstepDialog.sep.leftOffset:       0

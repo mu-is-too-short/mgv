@@ -1,0 +1,54 @@
+! @(#)$Mu: mgv/ad/infoDialog.ad 1.3 1999/01/19 04:55:15 $
+!#
+!# Document info dialog.
+!#
+MGv*infoDialog_popup.title:     MGv:  Document Info
+MGv*infoDialog.fractionBase:    7
+MGv*infoDialog.autoUnmanage:    False
+MGv*infoDialog.wlDefaultButton: *dismiss
+MGv*infoDialog.wlCancelButton:  *dismiss
+MGv*infoDialog.helpChapter:     __URL_The_File_Menu__
+MGv*infoDialog.helpSection:     doc-info
+
+MGv*infoDialog*contents*XmTextField.columns:  10
+MGv*infoDialog*contents*XmTextField.editable: False
+
+MGv*infoDialog*contents.orientation:     vertical
+MGv*infoDialog*contents.numColumns:      2
+MGv*infoDialog*contents.packing:         pack_column
+MGv*infoDialog*contents.entryAlignment:  alignment_end
+MGv*infoDialog*contents.isAligned:       True
+MGv*infoDialog*contents.topAttachment:   attach_form
+MGv*infoDialog*contents.leftAttachment:  attach_form
+MGv*infoDialog*contents.rightAttachment: attach_form
+
+MGv*infoDialog*contents*titleLabel.labelString:   Document Title:
+MGv*infoDialog*contents*dateLabel.labelString:    Creation Date:
+MGv*infoDialog*contents*forLabel.labelString:     For:
+MGv*infoDialog*contents*creatorLabel.labelString: Document Creator:
+MGv*infoDialog*contents*mediaLabel.labelString:   Default Media:
+MGv*infoDialog*contents*pagesLabel.labelString:   Number Of Pages:
+MGv*infoDialog*contents*typeLabel.labelString:    Document Type:
+
+MGv*infoDialog*dismiss.labelString:      Dismiss
+MGv*infoDialog*dismiss.leftAttachment:   attach_position
+MGv*infoDialog*dismiss.leftPosition:     1
+MGv*infoDialog*dismiss.rightAttachment:  attach_position
+MGv*infoDialog*dismiss.rightPosition:    3
+MGv*infoDialog*dismiss.bottomAttachment: attach_form
+
+MGv*infoDialog*help.labelString:      Help
+MGv*infoDialog*help.leftAttachment:   attach_position
+MGv*infoDialog*help.leftPosition:     4
+MGv*infoDialog*help.rightAttachment:  attach_position
+MGv*infoDialog*help.rightPosition:    6
+MGv*infoDialog*help.bottomAttachment: attach_form
+
+MGv*infoDialog.sep.topAttachment:    attach_widget
+MGv*infoDialog.sep.topWidget:        contents
+MGv*infoDialog.sep.bottomAttachment: attach_widget
+MGv*infoDialog.sep.bottomWidget:     dismiss
+MGv*infoDialog.sep.rightAttachment:  attach_form
+MGv*infoDialog.sep.rightOffset:      0
+MGv*infoDialog.sep.leftAttachment:   attach_form
+MGv*infoDialog.sep.leftOffset:       0

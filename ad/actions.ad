@@ -1,0 +1,66 @@
+! @(#)$Mu: mgv/ad/actions.ad 1.6 2001/03/14 13:13:25 $
+!##
+!## If you want MGv to scroll like most newsreaders (ie space will scroll
+!## down and move you to the next page), then you can add the following
+!## actions to the following action tables:
+!##
+!##	<Key>space:		mgvScroll(down, magical)
+!##	<Key>osfBackSpace:	mgvScroll(up, magical)
+!##
+!## If you want the space/backspace things to override the magic
+!## resistance, then use the force Luke! (ackk, I'm choking on cheese)
+!## (i.e. use the third "force" parameter):
+!##
+!##	<Key>space:		mgvScroll(down, magical, N)
+!##	<Key>osfBackSpace:	mgvScroll(up, magical, N)
+!##
+!## where "N" is a value greater than or equal to your chosen
+!## magicResistance.
+!##
+
+!#
+!# page marking action for the page list
+!#
+MGv*mainWindow.listSW*list.baseTranslations:	#override	\n\
+			<Key>osfHelp:	wlHelp()		\n\
+	s ~c ~m ~a	<Btn1Down>:	mgvMark(begin)		\n\
+	s ~c ~m ~a	<Btn1Motion>:	mgvMark(extend)		\n\
+	s ~c ~m ~a	<Btn1Up>:	mgvMark(end)		\n\
+			<Key>osfUp:	mgvScroll(up, magical)	\n\
+			<Key>osfDown:	mgvScroll(down, magical)\n\
+			<Key>osfLeft:	mgvScroll(left)		\n\
+			<Key>osfRight:	mgvScroll(right)
+
+!#
+!# some translations for the view windows
+!#
+MGv*Ghostview.baseTranslations:	#override		\n\
+	<Key>osfHelp:	wlHelp()			\n\
+	<Message>:	gvMessage()			\n\
+	<Btn1Down>:	mgvZoom(begin)			\n\
+	<Btn1Motion>:	mgvZoom(extend)			\n\
+	<Btn1Up>:	mgvZoom(end)			\n\
+	<EnterWindow>:	gvNotify(0)			\n\
+	<LeaveWindow>:	gvNotify(0)			\n\
+	<MotionNotify>:	gvNotify(0)			\n\
+	<Key>osfUp:	mgvScroll(up, magical)		\n\
+	<Key>osfDown:	mgvScroll(down, magical)	\n\
+	<Key>osfLeft:	mgvScroll(left)			\n\
+	<Key>osfRight:	mgvScroll(right)
+
+MGv*XmScrolledWindow*Ghostview.baseTranslations: #override \n\
+	<Key>osfHelp:	wlHelp()			\n\
+	<Message>:	gvMessage()			\n\
+	<Btn1Down>:	mgvZoom(begin)			\n\
+	<Btn1Motion>:	mgvZoom(extend)			\n\
+	<Btn1Up>:	mgvZoom(end)			\n\
+	<Btn2Down>:	mgvPan(begin)			\n\
+	<Btn2Motion>:	mgvPan(pan)			\n\
+	<Btn2Up>:	mgvPan(end)			\n\
+	<EnterWindow>:	gvNotify(0)			\n\
+	<LeaveWindow>:	gvNotify(0)			\n\
+	<MotionNotify>:	gvNotify(0)			\n\
+	<Key>osfUp:	mgvScroll(up, magical)		\n\
+	<Key>osfDown:	mgvScroll(down, magical)	\n\
+	<Key>osfLeft:	mgvScroll(left)			\n\
+	<Key>osfRight:	mgvScroll(right)

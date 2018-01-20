@@ -1,0 +1,14 @@
+! @(#)$Mu: mgv/ad/logDialog.ad 1.3 1999/09/19 16:48:00 $
+!#
+!# The program message/error/warning log.
+!#
+m4_pushdef(`__PFX__',`MGv*log')m4_dnl
+__PFX__*logTitle:            MGv:  Message Log
+__PFX__.horizontalSpacing:   10
+__PFX__.verticalSpacing:     10
+__PFX__.helpChapter:         __URL_The_Program_Log__
+__PFX__*logSave_popup.title: MGv:  Log Save
+__PFX__*logSave.pattern:     *.txt
+__PFX__*logSave.helpChapter: __URL_The_Program_Log__
+m4_include(`wlib/log.ad')m4_dnl
+m4_popdef(`__PFX__')m4_dnl

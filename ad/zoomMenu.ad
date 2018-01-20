@@ -1,0 +1,9 @@
+! @(#)$Mu: mgv/ad/zoomMenu.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# Zoom popup menu.
+!#
+MGv*zoomMenu*15.labelString: 1.5
+MGv*zoomMenu*20.labelString: 2
+MGv*zoomMenu*30.labelString: 3
+MGv*zoomMenu*40.labelString: 4
+MGv*zoomMenu*50.labelString: 5

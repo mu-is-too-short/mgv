@@ -1,0 +1,75 @@
+! @(#)$Mu: mgv/wlib/wlib/about.ad 1.1 2001/03/09 04:16:28 $
+!#
+!# about.ad - application defaults for the wlib standard about box
+!#
+m4_dnl
+m4_dnl About box.  You should set the following resources in your application
+m4_dnl defaults file:
+m4_dnl
+m4_dnl *aboutDialog.helpChapter
+m4_dnl *aboutDialog.helpSection
+m4_dnl
+m4_dnl __PFX__ should be a widget path to the about dialog.
+m4_dnl __CLS__ should be the application class name.
+m4_dnl
+m4_pushdef(`__POP__',m4_format(`%s_popup',__PFX__))m4_dnl
+__POP__.title:     __CLS__: About
+__PFX__.autoUnmanage:    False
+__PFX__.wlDefaultButton: *options
+__PFX__.wlCancelButton:  *dismiss
+__PFX__.fractionBase:    7
+
+__PFX__.options.labelString:      Build Options
+__PFX__.options.leftAttachment:   attach_position
+__PFX__.options.leftPosition:     1
+__PFX__.options.rightAttachment:  attach_position
+__PFX__.options.rightPosition:    3
+__PFX__.options.bottomAttachment: attach_form
+
+__PFX__.dismiss.labelString:      Dismiss
+__PFX__.dismiss.leftAttachment:   attach_position
+__PFX__.dismiss.leftPosition:     4
+__PFX__.dismiss.rightAttachment:  attach_position
+__PFX__.dismiss.rightPosition:    6
+__PFX__.dismiss.bottomAttachment: attach_form
+
+__PFX__.sep.rightAttachment:  attach_form
+__PFX__.sep.rightOffset:      0
+__PFX__.sep.leftAttachment:   attach_form
+__PFX__.sep.leftOffset:       0
+__PFX__.sep.bottomAttachment: attach_widget
+__PFX__.sep.bottomWidget:     dismiss
+
+__PFX__*form.topAttachment:   attach_form
+__PFX__*form.leftAttachment:  attach_form
+__PFX__*form.rightAttachment: attach_form
+
+__PFX__*icon.topAttachment:    attach_form
+__PFX__*icon.bottomAttachment: attach_form
+__PFX__*icon.leftAttachment:   attach_form
+
+__PFX__*header.topAttachment:    attach_form
+__PFX__*header.bottomAttachment: attach_form
+__PFX__*header.leftAttachment:   attach_widget
+__PFX__*header.leftWidget:       icon
+__PFX__*header.rightAttachment:  attach_form
+__PFX__*header.alignment:        alignment_center
+
+__PFX__.footer.leftAttachment:   attach_form
+__PFX__.footer.rightAttachment:  attach_form
+__PFX__.footer.bottomAttachment: attach_widget
+__PFX__.footer.bottomWidget:     sep
+
+__PFX__.textSW.topAttachment:          attach_widget
+__PFX__.textSW.topWidget:              form
+__PFX__.textSW.leftAttachment:         attach_form
+__PFX__.textSW.rightAttachment:        attach_form
+__PFX__.textSW.bottomAttachment:       attach_widget
+__PFX__.textSW.bottomWidget:           footer
+__PFX__.textSW.scrollBarDisplayPolicy: static
+
+__PFX__.textSW.text*rows:     10
+__PFX__.textSW.text*editable: False
+__PFX__.textSW.text*editMode: multi_line_edit
+__PFX__.textSW.text*fontList: -*-lucidatypewriter-medium-r-normal-*-12-*-*-*-*-*-iso8859-1
+m4_popdef(`__POP__')m4_dnl

@@ -1,0 +1,29 @@
+! @(#)$Mu: mgv/ad/fileSave.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# File save dialog.
+!#
+MGv*fileSave_popup.title:       MGv:  File Save
+MGv*fileSave.pattern:           *.ps
+MGv*fileSave.helpSection:       file-save
+MGv*fileSave.helpChapter:       __URL_The_File_Menu__
+MGv*fileSave.wlAutoDismiss:     True
+MGv*fileSave*okLabelString:     Save
+MGv*fileSave*cancelLabelString: Dismiss
+
+MGv*fileSave*saveMarked.labelString:     Save Marked Pages Only
+MGv*fileSave*saveMarked.alignment:       alignment_beginning
+MGv*fileSave*saveMarked.topAttachment:   attach_form
+MGv*fileSave*saveMarked.leftAttachment:  attach_form
+MGv*fileSave*saveMarked.rightAttachment: attach_form
+
+MGv*fileSave*saveUnmark.labelString:      Unmark Pages After Saving
+MGv*fileSave*saveUnmark.alignment:        alignment_beginning
+MGv*fileSave*saveUnmark.topAttachment:    attach_widget
+MGv*fileSave*saveUnmark.topWidget:        saveMarked
+MGv*fileSave*saveUnmark.leftAttachment:   attach_form
+MGv*fileSave*saveUnmark.rightAttachment:  attach_form
+MGv*fileSave*saveUnmark.bottomAttachment: attach_form
+
+MGv*existOverwrite_popup.title: MGv:  File Exists
+MGv*existOverwrite.helpSection: file-save
+MGv*existOverwrite.helpChapter: __URL_The_File_Menu__

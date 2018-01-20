@@ -1,0 +1,30 @@
+! @(#)$Mu: mgv/ad/fileOpen.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# File open dialog.
+!#
+MGv*fileOpen_popup.title:       MGv:  File Open
+MGv*fileOpen.pattern:           *.*ps*
+MGv*fileOpen.helpSection:       file-open
+MGv*fileOpen.helpChapter:       __URL_The_File_Menu__
+MGv*fileOpen*okLabelString:     Open
+MGv*fileOpen*cancelLabelString: Dismiss
+
+MGv*fileOpen*openForm.fractionBase: 2
+
+MGv*fileOpen*openBrowse.labelString:      Browse
+MGv*fileOpen*openBrowse.alignment:        alignment_beginning
+MGv*fileOpen*openBrowse.topAttachment:    attach_form
+MGv*fileOpen*openBrowse.bottomAttachment: attach_form
+MGv*fileOpen*openBrowse.leftAttachment:   attach_position
+MGv*fileOpen*openBrowse.leftPosition:     0
+MGv*fileOpen*openBrowse.rightAttachment:  attach_position
+MGv*fileOpen*openBrowse.rightPosition:    1
+
+MGv*fileOpen*openNew.labelString:      New Window
+MGv*fileOpen*openNew.alignment:        alignment_beginning
+MGv*fileOpen*openNew.topAttachment:    attach_form
+MGv*fileOpen*openNew.bottomAttachment: attach_form
+MGv*fileOpen*openNew.leftAttachment:   attach_position
+MGv*fileOpen*openNew.leftPosition:     1
+MGv*fileOpen*openNew.rightAttachment:  attach_position
+MGv*fileOpen*openNew.rightPosition:    2

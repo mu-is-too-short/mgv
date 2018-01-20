@@ -1,0 +1,12 @@
+! @(#)$Mu: mgv/ad/reallyExitDialog.ad 1.2 1998/11/17 05:09:50 $
+!#
+!# Exit confirmation dialog.
+!#
+MGv*reallyExit_popup.title:       MGv:  Really Exit?
+MGv*reallyExit.okLabelString:     Yes
+MGv*reallyExit.cancelLabelString: No
+MGv*reallyExit.helpSection:       file-exit
+MGv*reallyExit.helpChapter:       __URL_The_File_Menu__
+MGv*reallyExit.messageString: \
+	You have multiple MGv windows;\n\
+	do you really want to exit?

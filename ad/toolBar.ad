@@ -1,0 +1,124 @@
+! @(#)$Mu: mgv/ad/toolBar.ad 1.4 1998/11/26 23:38:25 $
+!#
+!# Toolbar configurables.
+!#
+!MGv*mainWindow*toolBar.buttonMarginExtra:
+!MGv*mainWindow*toolBar.buttonShadowThickness:
+!MGv*mainWindow*toolBar.flattenButtons:
+!MGv*mainWindow*toolBar.groupSpacing:
+!MGv*mainWindow*toolBar.marginHeight:
+!MGv*mainWindow*toolBar.marginWidth:
+!MGv*mainWindow*toolBar.showToolTips:
+!MGv*mainWindow*toolBar.spacing:
+!MGv*mainWindow*toolBar.tipBackground:
+!MGv*mainWindow*toolBar.tipDelay:
+!MGv*mainWindow*toolBar.tipDistance:
+!MGv*mainWindow*toolBar.tipFontList:
+!MGv*mainWindow*toolBar.tipForeground:
+!MGv*mainWindow*toolBar.tipPosition:
+!MGv*mainWindow*toolBar.useColorIcons:
+!MGv*mainWindow*toolBar.imagePath:   __DATADIR__/toolbar
+MGv*mainWindow*toolBar.tipFontList: -*-helvetica-medium-r-normal--10-*-*-*-*-*-iso8859-1
+
+MGv*mainWindow*toolBar*fileOpen.newGroup:        true
+MGv*mainWindow*toolBar*fileOpen.toolBarIcon:     INTERNAL::fileOpen
+MGv*mainWindow*toolBar*fileOpen.toolTip:         Open a new PostScript file
+MGv*mainWindow*toolBar*fileOpen.helpSection:     file-open
+MGv*mainWindow*toolBar*fileOpen.helpChapter:     __URL_The_File_Menu__
+MGv*mainWindow*toolBar*fileOpen.wlStatusMessage: Open a new file
+MGv*mainWindow*toolBar*fileOpen.labelString:
+
+MGv*mainWindow*toolBar*filePrint.toolBarIcon:     INTERNAL::filePrint
+MGv*mainWindow*toolBar*filePrint.toolTip:         Print the file
+MGv*mainWindow*toolBar*filePrint.helpSection:     file-print
+MGv*mainWindow*toolBar*filePrint.helpChapter:     __URL_The_File_Menu__
+MGv*mainWindow*toolBar*filePrint.wlStatusMessage: Print the current file
+MGv*mainWindow*toolBar*filePrint.labelString:
+
+MGv*mainWindow*toolBar*mark.newGroup:        true
+MGv*mainWindow*toolBar*mark.toolBarIcon:     INTERNAL::mark
+MGv*mainWindow*toolBar*mark.toolTip:         (Un)Mark Page
+MGv*mainWindow*toolBar*mark.helpSection:     mark-mark
+MGv*mainWindow*toolBar*mark.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*mark.wlStatusMessage: Mark or unmark the current page
+MGv*mainWindow*toolBar*mark.labelString:
+
+MGv*mainWindow*toolBar*markAll.toolBarIcon:     INTERNAL::markAll
+MGv*mainWindow*toolBar*markAll.toolTip:         Mark All Pages
+MGv*mainWindow*toolBar*markAll.helpSection:     mark-all
+MGv*mainWindow*toolBar*markAll.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*markAll.wlStatusMessage: Mark all pages
+MGv*mainWindow*toolBar*markAll.labelString:
+
+MGv*mainWindow*toolBar*markNone.toolBarIcon:     INTERNAL::markNone
+MGv*mainWindow*toolBar*markNone.toolTip:         Unmark All Pages
+MGv*mainWindow*toolBar*markNone.helpSection:     mark-all
+MGv*mainWindow*toolBar*markNone.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*markNone.wlStatusMessage: Unmark all pages
+MGv*mainWindow*toolBar*markNone.labelString:
+
+MGv*mainWindow*toolBar*markInvert.toolBarIcon:     INTERNAL::markInvert
+MGv*mainWindow*toolBar*markInvert.toolTip:         Invert the marked pages
+MGv*mainWindow*toolBar*markInvert.helpSection:     mark-invert
+MGv*mainWindow*toolBar*markInvert.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*markInvert.wlStatusMessage: Invert the marked pages
+MGv*mainWindow*toolBar*markInvert.labelString:
+
+MGv*mainWindow*toolBar*markEven.toolBarIcon:     INTERNAL::markEven
+MGv*mainWindow*toolBar*markEven.toolTip:         Mark Even Pages
+MGv*mainWindow*toolBar*markEven.helpSection:     mark-evenodd
+MGv*mainWindow*toolBar*markEven.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*markEven.wlStatusMessage: Mark the even numbered pages
+MGv*mainWindow*toolBar*markEven.labelString:
+
+MGv*mainWindow*toolBar*markOdd.toolBarIcon:     INTERNAL::markOdd
+MGv*mainWindow*toolBar*markOdd.toolTip:         Mark Odd Pages
+MGv*mainWindow*toolBar*markOdd.helpSection:     mark-evenodd
+MGv*mainWindow*toolBar*markOdd.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*markOdd.wlStatusMessage: Mark the odd numbered pages
+MGv*mainWindow*toolBar*markOdd.labelString:
+
+MGv*mainWindow*toolBar*markPages.toolBarIcon:     INTERNAL::markPages
+MGv*mainWindow*toolBar*markPages.toolTip:         Mark Pages
+MGv*mainWindow*toolBar*markPages.helpSection:     mark-pages
+MGv*mainWindow*toolBar*markPages.helpChapter:     __URL_The_Mark_Menu__
+MGv*mainWindow*toolBar*markPages.wlStatusMessage: Set the marked pages
+MGv*mainWindow*toolBar*markPages.labelString:
+
+MGv*mainWindow*toolBar*magstepIncr.newGroup:        true
+MGv*mainWindow*toolBar*magstepIncr.toolBarIcon:     INTERNAL::magstepIncr
+MGv*mainWindow*toolBar*magstepIncr.toolTip:         Increase Magstep
+MGv*mainWindow*toolBar*magstepIncr.helpSection:     magstep-incdec
+MGv*mainWindow*toolBar*magstepIncr.helpChapter:     __URL_The_Magstep_Menu__
+MGv*mainWindow*toolBar*magstepIncr.wlStatusMessage: Increase the magstep
+MGv*mainWindow*toolBar*magstepIncr.labelString:
+
+MGv*mainWindow*toolBar*magstepDecr.toolBarIcon:     INTERNAL::magstepDecr
+MGv*mainWindow*toolBar*magstepDecr.toolTip:         Decrease Magstep
+MGv*mainWindow*toolBar*magstepDecr.helpSection:     magstep-incdec
+MGv*mainWindow*toolBar*magstepDecr.helpChapter:     __URL_The_Magstep_Menu__
+MGv*mainWindow*toolBar*magstepDecr.wlStatusMessage: Decrease the magstep
+MGv*mainWindow*toolBar*magstepDecr.labelString:
+
+MGv*mainWindow*toolBar*helpContext.newGroup:        true
+MGv*mainWindow*toolBar*helpContext.toolBarIcon:     INTERNAL::helpContext
+MGv*mainWindow*toolBar*helpContext.toolTip:         Context Help
+MGv*mainWindow*toolBar*helpContext.helpSection:     help-context
+MGv*mainWindow*toolBar*helpContext.helpChapter:     __URL_The_Help_Menu__
+MGv*mainWindow*toolBar*helpContext.wlStatusMessage: Get help on a user interface element
+MGv*mainWindow*toolBar*helpContext.labelString:
+
+MGv*mainWindow*toolBar*pagePrev.newGroup:        true
+MGv*mainWindow*toolBar*pagePrev.toolBarIcon:     INTERNAL::pagePrev
+MGv*mainWindow*toolBar*pagePrev.toolTip:         Previous Page
+MGv*mainWindow*toolBar*pagePrev.helpSection:     page-nextprev
+MGv*mainWindow*toolBar*pagePrev.helpChapter:     __URL_The_Page_Menu__
+MGv*mainWindow*toolBar*pagePrev.wlStatusMessage: Go to the previous page
+MGv*mainWindow*toolBar*pagePrev.labelString:
+
+MGv*mainWindow*toolBar*pageNext.toolBarIcon:     INTERNAL::pageNext
+MGv*mainWindow*toolBar*pageNext.toolTip:         Next Page
+MGv*mainWindow*toolBar*pageNext.helpSection:     page-nextprev
+MGv*mainWindow*toolBar*pageNext.helpChapter:     __URL_The_Page_Menu__
+MGv*mainWindow*toolBar*pageNext.wlStatusMessage: Go to the next page
+MGv*mainWindow*toolBar*pageNext.labelString:
